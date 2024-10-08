@@ -2,7 +2,7 @@
 layout: post
 author: duncan_miller
 title: EV Battery Recycling with Autonomous Robotic Disassembly
-description: Discover how Rose City Robotics is pioneering autonomous robotic solutions for the recycling of lithium-ion electric vehicle batteries.
+description: Discover how RoZero Labs is pioneering autonomous robotic solutions for the recycling of lithium-ion electric vehicle batteries.
 image: /images/posts/ev_battery.png
 published: true
 ---
@@ -17,7 +17,7 @@ Lithium-ion batteries are made with several chemistries, but all use some combin
 
 Even when battery cells are no longer usable, one interesting thing about batteries is that they don't consume these valuable materials over the course of their life, so most of the materials still exist in their original quantities. The problem is recovering them.
 
-At Rose City Robotics, we are developing autonomous robotic systems to enhance the recycling process of lithium-ion batteries. Our mission is to enable the autonomous disassembly of large lithium-ion batteries like the ones used in electric vehicles, recovering valuable materials with greater efficiency and lower emissions.
+At RoZero Labs, we are developing autonomous robotic systems to enhance the recycling process of lithium-ion batteries. Our mission is to enable the autonomous disassembly of large lithium-ion batteries like the ones used in electric vehicles, recovering valuable materials with greater efficiency and lower emissions.
 
 ### The Need for Autonomous Robotic Disassembly
 
@@ -58,12 +58,12 @@ Robotic equipment offers precise disassembly, recovering materials with greater 
 ### Technological Innovations in Robotics
 
 #### Leveraging Machine Learning
-Our approach at Rose City Robotics involves collecting and utilizing sensor and vision data to train transformer neural networks to provide robots with predictive motion planning capabilities. This allows our robots to train on complex tasks, enabling them to perform precise disassembly operations autonomously. This process is called imitation learning, where robots learn from human demonstrations and teleoperation using [research pioneered by Stanford University](https://mobile-aloha.github.io/).
+Our approach at RoZero Labs involves collecting and utilizing sensor and vision data to train transformer neural networks to provide robots with predictive motion planning capabilities. This allows our robots to train on complex tasks, enabling them to perform precise disassembly operations autonomously. This process is called imitation learning, where robots learn from human demonstrations and teleoperation using [research pioneered by Stanford University](https://mobile-aloha.github.io/).
 
 We are also using a technique called active inference, which is a unified theory of human brain function using statistical physics. Active inference treats both perception and action as inference processes, allowing robots to seamlessly integrate sensory information and motor control techniques which shows great promise for endowing robots with adaptive capabilities central to real world applications.
 
 #### Sensor and Vision Data Integration
-We are developing [systems for capturing training data from human demonstrations](https://rosecityrobotics.com/2024/05/08/data-collection-methodologies-for-ai-driven-robotics/). By integrating training data gathered from our sensors and vision systems, we provide our robots with the necessary data to understand and navigate the intricate structures of EV battery packs. This data is crucial for training custom robots to perform these tasks safely and efficiently.
+We are developing [systems for capturing training data from human demonstrations](https://rozerolabs.com/2024/05/08/data-collection-methodologies-for-ai-driven-robotics/). By integrating training data gathered from our sensors and vision systems, we provide our robots with the necessary data to understand and navigate the intricate structures of EV battery packs. This data is crucial for training custom robots to perform these tasks safely and efficiently.
 
 ### Benefits of Autonomous Robotic Disassembly
 Autonomous robotic disassembly allows for more precise material recovery compared to traditional methods. By disassembling battery packs, autonomous robots can recover valuable materials such as nickel, manganese, cobalt, aluminum, copper and lithium more efficiently. Also good cells can be extracted before the recycling process and returned to use, which saves a considerable amount of embodied manufacturing energy and cost.
@@ -75,7 +75,7 @@ Battery recycling involves handling hazardous materials with electrical charge, 
 ### Market and Industry Landscape
 
 #### Growth of EV Market
-The EV market is growing rapidly, with EVs projected to constitute 40% of global car sales by 2030. This growth increases the demand for efficient recycling solutions to manage the influx of used batteries. Since batteries reach their end of life in 10-15 years, a [report by McKinsey](https://www.mckinsey.com/industries/automotive-and-assembly/our-insights/battery-recycling-takes-the-drivers-seat) expects over 1.8 gigatons of EV batteries to reach end of life by 2030. This number is growing exponentially, with 7.8 gigatons to be recycled by 2035 and 20.5 gigatons by 2040. At Rose City Robotics we are working to ensure that our technologies remain at the cutting edge of the industry and that our robotic solutions are adaptable and scalable as batteries continue to evolve.
+The EV market is growing rapidly, with EVs projected to constitute 40% of global car sales by 2030. This growth increases the demand for efficient recycling solutions to manage the influx of used batteries. Since batteries reach their end of life in 10-15 years, a [report by McKinsey](https://www.mckinsey.com/industries/automotive-and-assembly/our-insights/battery-recycling-takes-the-drivers-seat) expects over 1.8 gigatons of EV batteries to reach end of life by 2030. This number is growing exponentially, with 7.8 gigatons to be recycled by 2035 and 20.5 gigatons by 2040. At RoZero Labs we are working to ensure that our technologies remain at the cutting edge of the industry and that our robotic solutions are adaptable and scalable as batteries continue to evolve.
 
 #### Current Recycling Capacity
 While China leads the world in recycling capacity, the EU and the US are still developing their industries. Experts estimate the current recycling capacity in the US to be approximately 200,000 tons of batteries per year. Policymakers are increasingly pressuring the EV sector to ensure that batteries are designed for circularity, containing recycled content, and that recyclers recover larger shares of materials. EU regulations now require that 25% of materials in new batteries must be recycled content.
@@ -88,6 +88,6 @@ The production of lithium-ion batteries has a significant environmental impact, 
 
 #### The Future of EV Battery Recycling
 
-At Rose City Robotics we believe the future of EV battery recycling lies in disassembly using autonomous robotics. We are committed to advancing this technology to increase safety, reduce emissions and enable the continued growth of electric vehicles and battery technology, which we believe will benefit humanity and provide a positive climate impact. By leveraging machine learning we are developing intelligent, adaptive robots that revolutionize the recycling process.
+At RoZero Labs we believe the future of EV battery recycling lies in disassembly using autonomous robotics. We are committed to advancing this technology to increase safety, reduce emissions and enable the continued growth of electric vehicles and battery technology, which we believe will benefit humanity and provide a positive climate impact. By leveraging machine learning we are developing intelligent, adaptive robots that revolutionize the recycling process.
 
 Join us in pioneering sustainable recycling solutions and transforming the way we handle EV battery waste. For more information [reach out](/contact) to us today.

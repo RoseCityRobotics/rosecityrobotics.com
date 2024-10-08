@@ -12,14 +12,14 @@ This is because an operator must reprogram the robot for each new object or vari
 
 Where traditional robotics and automation hardware fall short are in more challenging tasks. For example tasks which include low volumes with unstructured or a high mix of variations in the possible objects the robot will interact with. For this case, it is typically not economically feasible for the operator to reprogram the robot for each low volume run many times for the high mix of objects.
 
-This is where the power of AI and intelligent robotics comes into play. At Rose City Robotics, our innovative approaches in data collection and robotic training using neural networks enable us to add layers of intelligence and capabilities to any robotics hardware. This enables the robots to be more adaptable, learn on the fly and intuitively decide on next actions based on its broader training dataset.
+This is where the power of AI and intelligent robotics comes into play. At RoZero Labs, our innovative approaches in data collection and robotic training using neural networks enable us to add layers of intelligence and capabilities to any robotics hardware. This enables the robots to be more adaptable, learn on the fly and intuitively decide on next actions based on its broader training dataset.
 
 A robot will need to be trained to do any new task and the essential first step of that process is collecting sample data of a human performing the task. In order to train a neural network on the intricacies of the task, we need to collect somewhere in the range of 50-100 examples of a human, or leader robot operated by a human doing that task using carefully placed video and sensors.
 
 ### The Role of Data in AI Robotics
 
 #### Data as the Foundation
-Effective AI-driven robotics begins with high-quality data. At Rose City Robotics, we utilize advanced sensors and vision systems to collect diverse, rich datasets that enable us to use machine learning to train robots to perform complex tasks with precision and adaptability.
+Effective AI-driven robotics begins with high-quality data. At RoZero Labs, we utilize advanced sensors and vision systems to collect diverse, rich datasets that enable us to use machine learning to train robots to perform complex tasks with precision and adaptability.
 
 #### Leading Data Collection Methodologies
 Our data collection methodologies are at the forefront of the industry, leveraging cutting-edge technologies to capture and process data in ways that are both efficient and effective. Our primary data collection methodologies include:
@@ -111,4 +111,4 @@ From advanced manufacturing to recycling and logistics, our robots are adept at 
 
 As we look ahead, the rapid growth in capabilities of generative AI as it relates to language has direct implications in the growth of capabilities of robotics. Integrating even more advanced AI capabilities promises to further enhance the autonomous and adaptable functions of robots, rapidly making them even more capable and flexible over time.
 
-Rose City Robotics is committed to pushing the boundaries of what's possible in robotic automation. By integrating sophisticated data collection systems like UMI, teleoperation with ALOHA and our Apple Vision Pro app into our workflow, we empower forward looking businesses to transform their operations with smart, safe, and efficient robotic assistants. For a consultation or demonstration, [reach out](/contact) to us today.
+RoZero Labs is committed to pushing the boundaries of what's possible in robotic automation. By integrating sophisticated data collection systems like UMI, teleoperation with ALOHA and our Apple Vision Pro app into our workflow, we empower forward looking businesses to transform their operations with smart, safe, and efficient robotic assistants. For a consultation or demonstration, [reach out](/contact) to us today.

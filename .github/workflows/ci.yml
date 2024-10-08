@@ -143,7 +143,7 @@ jobs:
             deployment_id: ${{ steps.create_deployment.outputs.deployment_id }},
             state: 'success',
             environment: 'production',
-            environment_url: 'https://rosecityrobotics.com',  // Replace with your Netlify site URL
+            environment_url: 'https://rozerolabs.com',  // Replace with your Netlify site URL
             log_url: 'https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}'
           });
 

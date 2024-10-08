@@ -4,8 +4,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.metadata.myvariable }}.
 
-title: Rose City Robotics
+title: RoZero Labs
 tagline: An AI robotics integrator based in Portland Oregon
-email: support@rosecityrobotics.com
+email: support@rozerolabs.com
 description: >-
   We help companies implement robotics using AI and machine learning to enhance robot hardware with vision and predictive motion planning capabilities.

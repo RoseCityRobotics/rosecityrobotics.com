@@ -1,11 +1,11 @@
 ---
 layout: post
 author: duncan_miller
-description: Rose City Robotics Founder and CEO Joseph Cole, PhD will be presenting on Mobile ALOHA, the open source robotics hardware developed by Stanford University.
+description: RoZero Labs Founder and CEO Joseph Cole, PhD will be presenting on Mobile ALOHA, the open source robotics hardware developed by Stanford University.
 image: /images/posts/parts_meetup.png
 ---
 
-Join us on Sunday May 5th for a presentation by Rose City Robotics Founder and CEO Joseph Cole, PhD on Mobile ALOHA, the open source robotics hardware developed by Stanford University. The presentation will be given as the main talk for the Portland Area RoboTics Society (P.A.R.T.S) monthly meeting. To register for this free event, please visit the [registration page](https://www.meetup.com/ctrl-h/events/300803628/) on meetup.com.
+Join us on Sunday May 5th for a presentation by RoZero Labs Founder and CEO Joseph Cole, PhD on Mobile ALOHA, the open source robotics hardware developed by Stanford University. The presentation will be given as the main talk for the Portland Area RoboTics Society (P.A.R.T.S) monthly meeting. To register for this free event, please visit the [registration page](https://www.meetup.com/ctrl-h/events/300803628/) on meetup.com.
 
 ### P.A.R.T.S. Mobile ALOHA Overview
 

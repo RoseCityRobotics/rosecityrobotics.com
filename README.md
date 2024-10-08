@@ -1,4 +1,4 @@
-# Rose City Robotics
+# RoZero Labs
 A robotics startup in Portland Oregon.
 
 ## Usage
@@ -50,7 +50,7 @@ At the top of the post file, you need to include "front matter" in YAML format. 
 ---
 layout: post
 author: duncan_miller
-description: Rose City Robotics Founder and CEO Joseph Cole, PhD will be presenting on Mobile ALOHA, the open source robotics hardware developed by Stanford University.
+description: RoZero Labs Founder and CEO Joseph Cole, PhD will be presenting on Mobile ALOHA, the open source robotics hardware developed by Stanford University.
 image: images/posts/image.jpg
 ---
 ```

@@ -1,13 +1,13 @@
 ---
 layout: post
 author: duncan_miller
-title: Rose City Robotics Wins Demolicious
+title: RoZero Labs Wins Demolicious
 description: The competition fosters an incredible sense of community, where early-stage teams can network, share ideas, and gain valuable feedback
 image: /images/posts/demo_belt_joe_duncan_small.png
 published: true
 ---
 
-Last week, we won our first pitch competition at [Demolicious](https://www.pitchatdemolicious.com/). Winning Demolicious is not just about taking home a belt, it's about being part of Portland’s thriving startup ecosystem. The competition fosters an incredible sense of community, where early-stage teams can network, share ideas, and gain valuable feedback from fellow entrepreneurs. For us at Rose City Robotics, it was an opportunity to not only showcase our company but also see the exciting projects other teams are working on.
+Last week, we won our first pitch competition at [Demolicious](https://www.pitchatdemolicious.com/). Winning Demolicious is not just about taking home a belt, it's about being part of Portland’s thriving startup ecosystem. The competition fosters an incredible sense of community, where early-stage teams can network, share ideas, and gain valuable feedback from fellow entrepreneurs. For us at RoZero Labs, it was an opportunity to not only showcase our company but also see the exciting projects other teams are working on.
 
 Demolicious is hosted monthly in Portland Oregon, organized by Rick Turoczy and Upstart Collective's Josh Carter. Teams get just 3 minutes to pitch their idea with slides. Since its inception in 2008, Demolicious has served as Portland’s premier launchpad for groundbreaking ideas.
 
@@ -15,7 +15,7 @@ Our win was particularly sweet after dethroning the amazing 3-time winner [Airbu
 
 ![Demolicious Belt](/images/posts/demo_belt_small.jpeg)
 
-We got to take home the infamous Demolicious belt and have added our Rose City Robotics Sticker.
+We got to take home the infamous Demolicious belt and have added our RoZero Labs Sticker.
 
 Securing the Demolicious belt is an exciting milestone, but this journey is just beginning. The next challenge will be defending our title at the October 24th event, and ultimately, facing off against the best of the best in December at the "Champion of Champions" competition.
 
