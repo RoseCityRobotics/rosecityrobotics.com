@@ -1,0 +1,119 @@
+---
+layout: default
+title: "Build inspection from CAD"
+description: "Software-first defect detection for high-mix manufacturing. CAD goes in, inspection logic comes out — no rules to rewrite every time the part changes."
+permalink: /
+---
+
+<!-- Hero -->
+<div class="py-16 sm:py-24">
+  <div class="mx-auto max-w-5xl px-6 lg:px-8">
+    <p class="eyebrow text-primary-600 mb-6">Rose City Robotics</p>
+    <h1 class="text-6xl font-bold tracking-tight text-gray-900 sm:text-8xl">
+      <span class="block">Build inspection</span>
+      <span class="block">from CAD</span>
+    </h1>
+    <p class="mt-8 text-xl leading-8 text-gray-900 max-w-2xl">Software-first defect detection for high-mix manufacturing. CAD goes in, inspection logic comes out — no rules to rewrite every time the part changes.</p>
+    <p class="mt-4 text-lg leading-8 text-gray-600 max-w-2xl">Built by Joseph Cole, PhD. Deployed on practical edge hardware for pass/fail and defect location that plugs into real QA workflows.</p>
+    <div class="mt-10 flex flex-wrap gap-x-6 gap-y-3 items-center">
+      <a href="mailto:hello@rosecityrobotics.com?subject=Feasibility%20Sprint" class="btn btn-primary btn-lg">Start a Feasibility Sprint</a>
+      <a href="/why-it-works/" class="text-sm font-semibold leading-6 text-gray-900">See how it works <span aria-hidden="true">→</span></a>
+      <a href="/articles/" class="text-sm font-semibold leading-6 text-gray-900">Read the research <span aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</div>
+
+<!-- Today vs With RCR -->
+<section class="bg-gray-50 py-20">
+  <div class="mx-auto max-w-5xl px-6 grid md:grid-cols-2 gap-12">
+    <div class="border-t-2 border-gray-300 pt-8">
+      <h2 class="text-xl font-bold tracking-tight text-gray-500">Today</h2>
+      <p class="mt-1 text-2xl font-bold tracking-tight text-gray-900">Rules break on every revision.</p>
+      <p class="mt-4 text-base leading-7 text-gray-600">Rules-based vision systems require manual programming for each part, each finish, each tolerance. When the design changes — and it always does — you're back to rewriting rules. High-mix lines can't keep up. Your inspection station becomes a maintenance burden, not a quality signal.</p>
+    </div>
+    <div class="border-t-2 border-primary-600 pt-8">
+      <h2 class="text-xl font-bold tracking-tight text-primary-600">With RCR</h2>
+      <p class="mt-1 text-2xl font-bold tracking-tight text-gray-900">CAD goes in. Logic comes out.</p>
+      <p class="mt-4 text-base leading-7 text-gray-600">RoseVision CAD Studio trains directly from your STEP files. No rules to maintain. No large labeled dataset to collect first. When the part changes, rerun from CAD. Pass/fail and defect location that stays current with your design and deploys on the edge hardware your floor already runs.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Trusted by -->
+<div class="bg-white pb-24 sm:pb-32 mt-20 pt-10">
+  <div class="mx-auto max-w-7xl px-6 sm:px-6 lg:px-8">
+    <h2 class="text-center text-lg font-semibold leading-8 text-gray-900">Trusted by precision manufacturers. Integrated with the tools your floor already runs.</h2>
+    <div class="mt-14 flex flex-wrap justify-center items-center gap-x-12 gap-y-8">
+      <img src="<%= relative_url('/images/NVIDIA.png') %>" alt="NVIDIA" class="max-h-12 w-auto object-contain" height="48" />
+      <img src="<%= relative_url('/images/google_grey.png') %>" alt="Google" class="max-h-12 w-auto object-contain" height="48" />
+      <img src="<%= relative_url('/images/abb-logo-grey.png') %>" alt="ABB Robotics" class="max-h-12 w-auto object-contain" height="48" />
+      <img src="<%= relative_url('/images/FANUC-Logo-grey.png') %>" alt="FANUC" class="max-h-12 w-auto object-contain" height="48" />
+    </div>
+    <div class="mt-12 border-t border-gray-200 pt-10">
+      <p class="eyebrow text-center mb-8 text-gray-500">Backed by Oregon's manufacturing ecosystem</p>
+      <div class="flex flex-wrap justify-center items-center gap-x-12 gap-y-6 opacity-60">
+        <img src="<%= relative_url('/images/omep-grey.png') %>" alt="OMEP Oregon Manufacturing Extension Partnership" class="max-h-10 w-auto object-contain" height="40" />
+        <img src="<%= relative_url('/images/omic-grey.svg') %>" alt="OMIC Oregon Manufacturing Innovation Center" class="max-h-10 w-auto object-contain" height="40" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Featured / Demo -->
+<section class="bg-primary-600 text-white py-14" id="section-2">
+  <div class="mx-auto max-w-7xl px-6">
+    <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-center mb-10">
+      Build from CAD. Validate in Production. Scale with Confidence.
+    </h2>
+    <div class="max-w-4xl mx-auto">
+      <div class="relative w-full" style="padding-bottom: 56.25%;">
+        <iframe
+          class="absolute top-0 left-0 w-full h-full rounded-lg shadow-2xl"
+          src="https://www.youtube.com/embed/FjgZuOFZIus"
+          title="Rose City Robotics Demo"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Latest articles -->
+<% latest_articles = collections.articles.resources.first(3) %>
+<% if latest_articles.any? %>
+  <section class="mt-24 mb-24">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto max-w-2xl lg:mx-0">
+        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">From the lab</h2>
+        <p class="mt-2 text-lg leading-8 text-gray-600">Research notes, deployment lessons, and what we're working on next.</p>
+      </div>
+      <div class="mx-auto mt-12 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-12 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+        <% latest_articles.each do |article| %>
+          <article class="flex flex-col">
+            <% if article.data.image %>
+              <img src="<%= relative_url(article.data.image) %>" alt="" class="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover" />
+            <% end %>
+            <div class="mt-6">
+              <% if article.data.published_at %>
+                <time class="text-xs text-gray-500" datetime="<%= article.data.published_at %>">
+                  <%= Date.parse(article.data.published_at.to_s).strftime("%B %-d, %Y") %>
+                </time>
+              <% end %>
+              <h3 class="mt-2 text-lg font-semibold text-gray-900">
+                <a href="<%= article.relative_url %>" class="hover:text-primary-600"><%= article.data.title %></a>
+              </h3>
+              <% if article.data.meta_description %>
+                <p class="mt-2 text-sm text-gray-600"><%= article.data.meta_description %></p>
+              <% end %>
+            </div>
+          </article>
+        <% end %>
+      </div>
+      <div class="mt-10">
+        <a href="/articles/" class="btn btn-link px-0">All articles <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </section>
+<% end %>

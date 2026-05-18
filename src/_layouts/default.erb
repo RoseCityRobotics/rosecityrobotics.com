@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en" class="h-full antialiased">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <%
+      page_title = resource.data.title
+      site_title = site.metadata.title
+      full_title = page_title ? "#{page_title} — #{site_title}" : site_title
+      description = resource.data.description || site.metadata.description
+      og_image = resource.data.image ? relative_url(resource.data.image) : relative_url(site.metadata.default_image || "/images/joe_robot_battery_lab.png")
+      canonical = resource.data.canonical_url || "#{site.metadata.url}#{resource.relative_url}"
+    %>
+
+    <title><%= full_title %></title>
+    <meta name="description" content="<%= description %>" />
+    <link rel="canonical" href="<%= canonical %>" />
+
+    <meta property="og:title" content="<%= full_title %>" />
+    <meta property="og:description" content="<%= description %>" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="<%= canonical %>" />
+    <meta property="og:site_name" content="<%= site_title %>" />
+    <meta property="og:image" content="<%= site.metadata.url %><%= og_image %>" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="<%= full_title %>" />
+    <meta name="twitter:description" content="<%= description %>" />
+    <meta name="twitter:image" content="<%= site.metadata.url %><%= og_image %>" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="<%= asset_path :css %>" />
+    <script src="<%= asset_path :js %>" defer></script>
+    <%= live_reload_dev_js %>
+  </head>
+  <body class="flex h-full flex-col bg-white text-gray-900 font-sans">
+    <%= render Header.new(current_path: resource.relative_url) %>
+    <main class="flex-auto">
+      <%= yield %>
+    </main>
+    <%= render Footer.new %>
+  </body>
+</html>

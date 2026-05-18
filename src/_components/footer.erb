@@ -1,0 +1,20 @@
+<footer class="mt-32 flex-none">
+  <%= render Container.new do %>
+    <div class="border-t border-gray-100 pb-16 pt-10">
+      <div class="flex flex-col items-center gap-8">
+        <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm font-medium text-gray-700">
+          <% navigation_items.each do |item| %>
+            <% if item[:href].start_with?("http") %>
+              <a href="<%= item[:href] %>" target="_blank" rel="noopener noreferrer" class="transition hover:text-primary-600"><%= item[:name] %></a>
+            <% else %>
+              <a href="<%= item[:href] %>" class="transition hover:text-primary-600"><%= item[:name] %></a>
+            <% end %>
+          <% end %>
+        </div>
+        <p class="text-center text-sm text-gray-500">
+          &copy; <%= Date.today.year %> Rose City Robotics. All rights reserved.
+        </p>
+      </div>
+    </div>
+  <% end %>
+</footer>

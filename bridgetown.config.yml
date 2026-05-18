@@ -1,0 +1,34 @@
+url: "https://rosecityrobotics.com"
+
+permalink: pretty
+template_engine: erb
+timezone: America/Los_Angeles
+
+kramdown:
+  input: GFM
+
+pagination:
+  enabled: true
+  per_page: 12
+
+collections:
+  articles:
+    output: true
+    permalink: "/articles/:slug/"
+    sort_by: published_at
+    sort_direction: descending
+  docs:
+    output: true
+    permalink: "/docs/:slug/"
+    sort_by: slot
+    sort_direction: ascending
+  announcements:
+    output: true
+    permalink: "/announcements/:slug/"
+    sort_by: published_at
+    sort_direction: descending
+  events:
+    output: true
+    permalink: "/events/:slug/"
+    sort_by: start_datetime
+    sort_direction: descending

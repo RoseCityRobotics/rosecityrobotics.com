@@ -1,0 +1,210 @@
+---
+layout: default
+title: "About"
+description: "CAD-driven defect detection for precision manufacturers. Engineering-led, software-first quality control built by people who ship to factory floors."
+permalink: /about/
+---
+
+<div class="sr-only">
+  <h1>About Rose City Robotics</h1>
+</div>
+
+<!-- Mission -->
+<div id="our-mission" class="mt-32 overflow-hidden sm:mt-40">
+  <div class="mx-auto max-w-7xl sm:px-6 lg:flex lg:px-8">
+    <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-12 gap-y-16 lg:mx-0 lg:min-w-full lg:max-w-none lg:flex-none lg:gap-y-8">
+      <div class="lg:col-end-1 lg:w-full lg:max-w-lg lg:pb-8">
+        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Our Mission</h2>
+        <p class="text-xl leading-8 text-gray-600 mt-6">CAD-driven defect detection for precision manufacturers.</p>
+        <div class="mt-10 max-w-xl text-base leading-7 text-gray-700">
+          <p>At Rose City Robotics, we build inspection from CAD so quality is defined up front and stays stable on the line. Developed by <a href="/team/joseph-cole-phd/" class="text-primary-600 hover:text-primary-700 font-semibold">Joseph Cole, PhD</a>, RoseVision is built for quality and manufacturing engineering teams running high-mix production — shops where visual inspection is impossible to standardize, escaped defects are a real operational risk, and you can't wait months to collect training data before your next revision ships.</p>
+          <p class="mt-10">We go beyond thresholds and templates. Upload your STEP file, define the defects that matter, and deploy reliable go/no-go inspection on on-prem edge hardware — no cloud, no fragile rule engines, no full retraining when your CAD changes. Joseph Cole brings 20 years of machine vision and factory automation experience to every engagement.</p>
+        </div>
+      </div>
+      <div class="flex flex-wrap items-start justify-end gap-6 sm:gap-8 lg:contents">
+        <div class="w-0 flex-auto lg:ml-auto lg:w-auto lg:flex-none lg:self-end lg:pb-8">
+          <img src="<%= relative_url('/images/joe_robot_battery_lab.png') %>" alt="" class="aspect-[7/5] w-full md:w-[37rem] max-w-none rounded-2xl bg-gray-50 object-cover" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Team -->
+<div id="our-team" class="mx-auto mt-40 max-w-7xl sm:px-6 sm:mt-40 lg:px-8">
+  <div class="mx-auto max-w-2xl lg:mx-0">
+    <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Our Team</h2>
+    <p class="mt-6 text-lg leading-8 text-gray-600">We're machine vision engineers, automation specialists, and manufacturing technologists who've worked in real factories — not just research labs. We partner directly with quality engineers and process engineers who run production: helping design pilots, wiring into robotic cells, and generating the data that makes the business case. We don't hand over software and disappear. Led by Joseph Cole, PhD, we bring 20 years of industrial vision and automation experience to every engagement — and we stay until it works.</p>
+  </div>
+  <div class="mx-auto max-w-7xl">
+    <ul role="list" class="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-6 gap-y-20 sm:grid-cols-2 lg:max-w-none lg:grid-cols-2 lg:gap-x-8 xl:max-w-none">
+      <%
+        team_members = [
+          {
+            image: "joe-cole.png",
+            name: "Joseph Cole, Ph.D.",
+            title: "Co-founder, CEO / Technology and Vision",
+            bio: "Joseph earned his PhD in applied physics from Rice University and a graduate certificate in applied statistics from Portland State University (PSU). He is a retired Major with the US Army Reserves and has over 20 years of experience developing computer vision and machine learning algorithms across a variety of industries.",
+            github_url: "https://github.com/joecole889",
+            linkedin_url: "https://www.linkedin.com/in/joecole889/",
+            profile_url: "/team/joseph-cole-phd/",
+          },
+          {
+            image: "duncan-miller-headshot.png",
+            name: "Duncan Miller, MBA",
+            title: "Co-founder, Operations / Business Development",
+            bio: "Duncan is a software engineer with over 20 years of experience as an entrepreneur. He is a FIRST Robotics coach and has a passion for technology and entrepreneurship. Duncan earned an MBA from Babson College and is a mentor and innovation competition judge at the PSU Center for Entrepreneurship and Business Accelerator.",
+            github_url: "https://github.com/duncantmiller",
+            linkedin_url: "https://www.linkedin.com/in/duncantmiller/",
+          },
+          {
+            image: "aaryn-curl.jpg",
+            name: "Aaryn Curl",
+            title: "Senior Program Manager Robotics & AI",
+            bio: "Aaryn is a lifelong engineer with 19 years at Intel, where she led cross-functional software programs from concept to launch. At RCR, she combines her technical experience and passion to enable our customers to get the most out of their software and hardware investments.",
+            github_url: "https://github.com/aaryncurl",
+            linkedin_url: "https://www.linkedin.com/in/aaryn-curl/",
+          },
+          {
+            image: "kaj_hansteen_izora.jpeg",
+            name: "Kaj Hansteen Izora",
+            title: "Associate Physical AI Engineer",
+            bio: "Kaj (pronounced like Kai) is an engineer in AI, ML, and robotics, specializing in simulation, interpretability, and applying novel statistical methods to machine learning. He is an expert in utilizing tools like Omniverse and Cosmos to build realistic simulations of physical systems.",
+            github_url: "https://github.com/KajIzora",
+            linkedin_url: "https://www.linkedin.com/in/kaj-hansteen-izora/",
+          },
+          {
+            image: "samantha_town.jpeg",
+            name: "Samantha Town",
+            title: "Marketing and Communications",
+            bio: "Sam helps shape our communication and operational strategies with a conscientious emphasis on human relationships and impact. Sam graduated from the University of Oregon and grew up working in a family business in Oregon wine country.",
+            linkedin_url: "https://www.linkedin.com/in/samantha-town-16873b233/",
+          },
+        ]
+      %>
+      <% team_members.each do |member| %>
+        <li class="flex flex-col gap-6 xl:flex-row">
+          <div class="flex flex-col items-center flex-none">
+            <img src="<%= relative_url("/images/#{member[:image]}") %>" alt="" class="aspect-[4/5] w-52 h-64 flex-none rounded-2xl object-cover" />
+            <div class="mt-3 flex gap-3 items-center justify-center">
+              <% if member[:github_url] %>
+                <a href="<%= member[:github_url] %>" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-gray-500 hover:text-gray-600">
+                  <span class="sr-only">GitHub</span>
+                  <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
+                  </svg>
+                </a>
+              <% end %>
+              <% if member[:linkedin_url] %>
+                <a href="<%= member[:linkedin_url] %>" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-gray-500 hover:text-gray-600">
+                  <span class="sr-only">LinkedIn</span>
+                  <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                  </svg>
+                </a>
+              <% end %>
+            </div>
+          </div>
+          <div class="flex-auto">
+            <h3 class="text-lg font-semibold leading-8 tracking-tight text-gray-900"><%= member[:name] %></h3>
+            <p class="text-base leading-7 text-gray-600"><%= member[:title] %></p>
+            <p class="mt-6 text-base leading-7 text-gray-600"><%= member[:bio] %></p>
+            <% if member[:profile_url] %>
+              <p class="mt-4">
+                <a href="<%= member[:profile_url] %>" class="text-sm font-medium text-primary-600 hover:text-primary-500">View full profile →</a>
+              </p>
+            <% end %>
+          </div>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</div>
+
+<!-- Advisory Board -->
+<div id="our-advisory-board" class="mx-auto mt-40 max-w-7xl sm:px-6 sm:mt-40 lg:px-8">
+  <div class="mx-auto max-w-2xl lg:mx-0">
+    <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Our Advisory Board</h2>
+    <p class="mt-6 text-lg leading-8 text-gray-600">Our distinguished advisors bring deep technical expertise and real-world experience. They provide strategic counsel on technical direction, partner ecosystems, and deployment realities so we can scale CAD-driven inspection in high-mix environments without sacrificing reliability.</p>
+  </div>
+  <div class="mx-auto max-w-7xl">
+    <ul role="list" class="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-6 gap-y-20 sm:grid-cols-2 lg:max-w-none lg:grid-cols-3 lg:gap-x-8">
+      <%
+        advisors = [
+          {image: "grayson_shor.jpeg", name: "Grayson Shor", title: "Former Amazon | Former U.S. Diplomat | Manufacturing Industry Expert", linkedin_url: "https://www.linkedin.com/in/gmshor/"},
+          {image: "erin_galiger.jpeg", name: "Erin Galiger", title: "Director, North American Markets at ROCSYS", linkedin_url: "https://linkedin.com/in/eringaliger/"},
+          {image: "andrew.jpeg", name: "Andrew Fraker", title: "Data Scientist at StrongMinds", linkedin_url: "https://www.linkedin.com/in/andrew-fraker-5b757931/"},
+        ]
+      %>
+      <% advisors.each do |advisor| %>
+        <li class="flex flex-col gap-6 xl:flex-row">
+          <img src="<%= relative_url("/images/#{advisor[:image]}") %>" alt="" class="aspect-[4/5] w-52 flex-none rounded-2xl object-cover" />
+          <div class="flex-auto">
+            <h3 class="text-lg font-semibold leading-8 tracking-tight text-gray-900"><%= advisor[:name] %></h3>
+            <a href="<%= advisor[:linkedin_url] %>" target="_blank" rel="noopener noreferrer" class="mt-2 inline-flex items-center text-gray-500 hover:text-gray-600">
+              <span class="sr-only">LinkedIn</span>
+              <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+              </svg>
+            </a>
+            <p class="text-base leading-7 text-gray-600 mt-4"><%= advisor[:title] %></p>
+          </div>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</div>
+
+<!-- Values -->
+<div id="our-values" class="mx-auto mt-40 max-w-7xl sm:px-6 sm:mt-40 lg:px-8">
+  <div class="mx-auto max-w-2xl lg:mx-0">
+    <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Our Values</h2>
+    <p class="mt-6 text-lg leading-8 text-gray-600">We believe factory automation should be honest about what it can do, built to last in real production, and delivered by engineers who stand behind their work.</p>
+  </div>
+  <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
+    <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
+      <div class="flex flex-col">
+        <dt class="text-base font-semibold leading-7 text-gray-900">Integrity</dt>
+        <dd class="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
+          <p class="flex-auto">We operate with transparency, not just talk. We're self-capitalized — no VC, no PE, no investor clock ticking. Every decision we make is filtered through one question: does this serve our customers? We don't ask for recurring fees until you have hard data that the system works in your environment.</p>
+        </dd>
+      </div>
+      <div class="flex flex-col">
+        <dt class="text-base font-semibold leading-7 text-gray-900">Innovation</dt>
+        <dd class="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
+          <p class="flex-auto">We build from your CAD, not from scratch. From STEP-to-model toolchains to on-prem Jetson deployment, we iterate on real factory constraints — and we show up on the floor to make it work.</p>
+        </dd>
+      </div>
+      <div class="flex flex-col">
+        <dt class="text-base font-semibold leading-7 text-gray-900">Impact</dt>
+        <dd class="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
+          <p class="flex-auto">We measure success at the end of the line. Fewer escaped defects. Less over-processing. Unattended runs that actually run unattended. When a quality engineer can walk their VP through a business case built on real pilot data — that's the outcome we're after.</p>
+        </dd>
+      </div>
+    </dl>
+  </div>
+</div>
+
+<!-- Company -->
+<div id="our-company" class="mt-32 overflow-hidden sm:mt-40 mb-40">
+  <div class="mx-auto max-w-7xl sm:px-6 lg:flex lg:px-8">
+    <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-12 gap-y-16 lg:mx-0 lg:min-w-full lg:max-w-none lg:flex-none lg:gap-y-8">
+      <div class="lg:col-end-1 lg:w-full lg:max-w-lg lg:pb-8">
+        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Our Company</h2>
+        <p class="text-xl leading-8 text-gray-600 mt-6">Engineering-led. Software-first quality control.</p>
+        <div class="mt-10 max-w-xl text-base leading-7 text-gray-700">
+          <p>Rose City Robotics is a Portland-based machine vision lab led by Joseph Cole, PhD. We build inspection from CAD so QA is defined up front and stays stable on the line.</p>
+          <p class="mt-6"><strong>RoseVision CAD Studio</strong> turns your design files into deployable inspection logic — ready for on-prem edge hardware like NVIDIA Jetson Orin or x86.</p>
+        </div>
+      </div>
+      <div class="flex flex-wrap items-start justify-end gap-6 sm:gap-8 lg:contents">
+        <div class="w-0 flex-auto lg:ml-auto lg:w-auto lg:flex-none lg:self-end lg:pb-8">
+          <div class="relative w-full md:w-[37rem] max-w-none overflow-hidden rounded-2xl bg-gray-100" style="padding-bottom: 56.25%;">
+            <iframe src="https://www.youtube.com/embed/FjgZuOFZIus" title="RoseVision demo" class="absolute top-0 left-0 h-full w-full" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <p class="mt-3 text-sm text-gray-500">Watch a quick walkthrough of CAD-driven inspection.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

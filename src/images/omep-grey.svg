@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 56" fill="none">
+  <!-- OMEP icon: outer rectangle with H-shaped cutout (greyscale version of their black mark) -->
+  <g transform="translate(0, 4)">
+    <!-- Filled black square background -->
+    <rect x="0" y="0" width="48" height="48" fill="#6B7280"/>
+    <!-- White cutouts forming the H/bracket mark -->
+    <!-- Left inner gap -->
+    <rect x="8" y="10" width="10" height="28" fill="white"/>
+    <!-- Right inner gap -->
+    <rect x="30" y="10" width="10" height="28" fill="white"/>
+    <!-- Top gap (above crossbar) -->
+    <rect x="8" y="10" width="32" height="10" fill="white"/>
+    <!-- Bottom gap -->
+    <rect x="8" y="28" width="32" height="10" fill="white"/>
+    <!-- Center crossbar (stays filled = visible) keeps the H shape -->
+  </g>
+  <!-- OMEP wordmark -->
+  <text x="58" y="34" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-weight="800" font-size="26" fill="#4B5563" letter-spacing="1">OMEP</text>
+  <!-- Full name below -->
+  <text x="58" y="48" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-weight="400" font-size="7" fill="#9CA3AF" letter-spacing="0.3">OREGON MANUFACTURING EXTENSION PARTNERSHIP</text>
+</svg>

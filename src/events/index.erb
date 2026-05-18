@@ -1,0 +1,60 @@
+---
+layout: default
+title: "Events"
+description: "Upcoming and past Rose City Robotics events, demos, and meetups."
+permalink: /events/
+---
+
+<%= render SimpleLayout.new(eyebrow: "Get involved", title: "Events", intro: "Upcoming demos, meetups, and talks. Register via Luma.") do %>
+  <%
+    events = collections.events.resources
+    now = Time.now
+    upcoming, past = events.partition { |e| e.data.start_datetime && Time.parse(e.data.start_datetime.to_s) >= now }
+  %>
+
+  <% if upcoming.any? %>
+    <section class="mb-16">
+      <h2 class="text-xl font-semibold text-gray-900">Upcoming</h2>
+      <ul class="mt-6 grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2">
+        <% upcoming.each do |e| %>
+          <% start_dt = Time.parse(e.data.start_datetime.to_s) %>
+          <li class="rounded-2xl border border-gray-200 p-6">
+            <time class="text-xs uppercase tracking-wide text-primary-600 font-semibold" datetime="<%= start_dt.iso8601 %>">
+              <%= start_dt.strftime("%B %-d, %Y · %-l:%M %p") %>
+            </time>
+            <h3 class="mt-2 text-lg font-semibold text-gray-900">
+              <a href="<%= e.relative_url %>" class="hover:text-primary-600"><%= e.data.title %></a>
+            </h3>
+            <% if e.data.location %>
+              <p class="mt-1 text-sm text-gray-600"><%= e.data.location %></p>
+            <% end %>
+            <% if e.data.registration_link %>
+              <a href="<%= e.data.registration_link %>" target="_blank" rel="noopener noreferrer" class="mt-4 inline-flex btn btn-outline">Register</a>
+            <% end %>
+          </li>
+        <% end %>
+      </ul>
+    </section>
+  <% end %>
+
+  <% if past.any? %>
+    <section>
+      <h2 class="text-xl font-semibold text-gray-900">Past events</h2>
+      <ul class="mt-6 divide-y divide-gray-100">
+        <% past.each do |e| %>
+          <% start_dt = Time.parse(e.data.start_datetime.to_s) %>
+          <li class="py-4">
+            <time class="text-xs text-gray-500" datetime="<%= start_dt.iso8601 %>">
+              <%= start_dt.strftime("%B %-d, %Y") %>
+            </time>
+            <a href="<%= e.relative_url %>" class="block text-base font-medium text-gray-900 hover:text-primary-600"><%= e.data.title %></a>
+          </li>
+        <% end %>
+      </ul>
+    </section>
+  <% end %>
+
+  <% unless upcoming.any? || past.any? %>
+    <p class="text-gray-600">No events scheduled yet.</p>
+  <% end %>
+<% end %>

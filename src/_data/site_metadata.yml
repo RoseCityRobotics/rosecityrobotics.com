@@ -1,0 +1,18 @@
+title: "Rose City Robotics"
+tagline: "Build inspection from CAD."
+description: "Rose City Robotics builds RoseVision CAD Studio — CAD-driven defect detection for high-mix precision manufacturers. Software-first quality control that deploys on edge hardware."
+email: "hello@rosecityrobotics.com"
+url: "https://rosecityrobotics.com"
+locale: "en"
+twitter:
+  username: ""
+  card: "summary_large_image"
+social:
+  links:
+    - https://www.linkedin.com/company/rose-city-robotics
+    - https://github.com/RoseCityRobotics
+logo: "/images/logo.svg"
+default_image: "/images/og_default.jpg"
+author:
+  name: "Rose City Robotics"
+  email: "hello@rosecityrobotics.com"

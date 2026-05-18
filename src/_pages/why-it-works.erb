@@ -1,0 +1,205 @@
+---
+layout: default
+title: "Why CAD-Driven Inspection Actually Works"
+description: "RoseVision CAD Studio trains directly from your STEP files and deploys on edge hardware — catch defects earlier, cut scrap, keep inspection stable even as parts and finishes change."
+permalink: /why-it-works/
+---
+
+<!-- Hero -->
+<div class="mt-24 sm:mt-32">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-3xl text-center">
+      <p class="eyebrow text-primary-600">Build inspection from CAD</p>
+      <h1 class="mt-4 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl">
+        Why CAD-Driven Inspection <br class="hidden sm:inline" /> Actually Works
+      </h1>
+      <p class="mt-6 text-xl leading-8 font-semibold">Design geometry → deployable QA logic for high-mix lines.</p>
+      <p class="mt-8 text-lg leading-8 text-gray-600">
+        <strong class="text-gray-900">RoseVision CAD Studio</strong> trains directly from your STEP files and deploys on your edge hardware — so you catch defects earlier, cut scrap, and keep inspection stable even as parts and finishes change. Built by <strong class="text-gray-900">Joseph Cole, PhD</strong> and the team at Rose City Robotics.
+      </p>
+      <p class="mt-6 text-sm text-gray-500">Injection molding (flash, sink, short shots) • Die casting (porosity, inclusions) • Stamped sheet (warp, surface)</p>
+    </div>
+  </div>
+</div>
+
+<!-- What we do -->
+<div id="what-we-do" class="mt-32 sm:mt-40">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-2xl lg:mx-0">
+      <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">What we do</h2>
+    </div>
+    <div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
+      <p class="text-lg leading-8 text-gray-600">We convert your CAD/STEP into deployable inspection logic. No brittle threshold rules. No waiting for a big dataset of bad parts. Pass/fail + defect localization outputs integrate to your PLC, robot, or HMI.</p>
+      <ul class="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-3">
+        <% [
+          "CAD → inspection model",
+          "Jetson Orin Nano/NX or x86 — on-prem",
+          "Works with FLIR/IDS USB3 industrial cameras",
+        ].each do |item| %>
+          <li class="flex items-center gap-x-3 rounded-lg bg-secondary-50 px-4 py-3">
+            <svg aria-hidden="true" class="h-5 w-5 flex-none text-secondary-600" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+            </svg>
+            <span class="text-sm font-medium text-gray-900"><%= item %></span>
+          </li>
+        <% end %>
+      </ul>
+      <div class="mt-10 rounded-xl border-l-4 border-golden-yellow-500 bg-golden-yellow-50 p-6">
+        <p class="text-base font-medium text-gray-900">If your CAD defines what "good" looks like, your QA should start there — not after scrap shows up.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Process -->
+<div id="how-it-works" class="mt-32 sm:mt-40">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-2xl lg:mx-0">
+      <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Our process</h2>
+    </div>
+    <div class="mx-auto mt-16 max-w-2xl lg:mx-0 lg:max-w-none">
+      <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
+        <% [
+          ["1", "Upload CAD and context", "Drag a STEP file into RoseVision CAD Studio and add the inspection context (part details, defects, features, environment)."],
+          ["2", "Simulate, define, and validate", "We build inspection zones and checks from geometry. You confirm tolerances, and we verify cycle-time fit."],
+          ["3", "Deploy on your line", "We package a production-ready model for Jetson Orin Nano/NX or x86. Outputs are simple: pass/fail, defect class, location. When the drawing changes, update CAD → regenerate logic → redeploy."],
+        ].each do |num, title, body| %>
+          <div class="relative rounded-2xl border border-gray-200 bg-white p-8">
+            <div class="flex h-12 w-12 items-center justify-center rounded-full bg-primary-500 text-white text-xl font-bold"><%= num %></div>
+            <h3 class="mt-6 text-lg font-semibold leading-8 tracking-tight text-gray-900"><%= title %></h3>
+            <p class="mt-4 text-base leading-7 text-gray-600"><%= body %></p>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Why factories choose -->
+<div id="why-factories-choose" class="mt-32 sm:mt-40">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-2xl lg:mx-0">
+      <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Why factories choose RoseVision CAD Studio</h2>
+    </div>
+    <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
+      <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
+        <% [
+          ["Catch defects on first shot", "Because your inspection logic comes from CAD, it's ready the moment parts come off the line — not after scrap has already shipped."],
+          ["High-mix friendly", "CAD-driven logic adapts across variants without weeks of re-tuning."],
+          ["Keep your cameras", "RoseVision runs on the industrial cameras you already have — FLIR, IDS, and compatible USB3 units. Upgrade the inspection logic, not the hardware you already paid for."],
+          ["Real support from engineers", "Built and supported by people who ship to factory floors — not demo teams."],
+        ].each do |title, body| %>
+          <div class="flex flex-col">
+            <dt class="text-base font-semibold leading-7 text-gray-900"><%= title %></dt>
+            <dd class="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
+              <p class="flex-auto max-w-prose"><%= body %></p>
+            </dd>
+          </div>
+        <% end %>
+      </dl>
+    </div>
+  </div>
+</div>
+
+<!-- Where it fits -->
+<div id="where-it-fits" class="mt-32 sm:mt-40">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-2xl lg:mx-0">
+      <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Where it fits best</h2>
+    </div>
+    <div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
+      <div class="grid grid-cols-1 gap-8 lg:grid-cols-2">
+        <div class="rounded-2xl bg-gray-50 p-8">
+          <h3 class="text-lg font-semibold leading-8 text-gray-900 mb-6">Applications</h3>
+          <ul class="space-y-4">
+            <% [
+              ["Injection molding & plastic enclosures:", "flash, sink marks, short shots, surface blemishes."],
+              ["Die casting & machined housings:", "porosity indications, inclusions, missing features."],
+              ["Stamped & formed sheet metal:", "warping, incomplete features, cosmetic damage."],
+            ].each_with_index do |(label, body), i| %>
+              <li class="flex gap-x-3">
+                <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-primary-500 text-xs font-medium text-white"><%= i + 1 %></span>
+                <div>
+                  <span class="font-semibold text-gray-900"><%= label %></span>
+                  <span class="text-gray-600"> <%= body %></span>
+                </div>
+              </li>
+            <% end %>
+          </ul>
+        </div>
+        <div class="rounded-2xl bg-gray-50 p-8">
+          <h3 class="text-lg font-semibold leading-8 text-gray-900 mb-6">Launch Scenarios</h3>
+          <ul class="space-y-4">
+            <% ["New mold/tool introductions", "Replacing brittle rule-based QA stations", "Move first-article inspection earlier"].each do |item| %>
+              <li class="flex gap-x-3 text-gray-600">
+                <svg aria-hidden="true" class="h-6 w-6 flex-none text-secondary-600" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
+                </svg>
+                <%= item %>
+              </li>
+            <% end %>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Hardware & Integration -->
+<div id="hardware" class="mt-32 sm:mt-40">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-2xl lg:mx-0">
+      <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Hardware & integration</h2>
+    </div>
+    <div class="mx-auto mt-16 max-w-2xl lg:mx-0 lg:max-w-none">
+      <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <% [
+          ["Edge Compute", "<span class=\"font-mono\">NVIDIA Jetson Orin Nano / Orin NX</span>, or x86 industrial PCs."],
+          ["Cameras", "USB3 (FLIR, IDS) and compatible industrial units."],
+          ["Outputs", "Pass/fail + defect class + location; integrable with PLCs, HMIs, and robot pick/segregate routines."],
+          ["Environment", "Built for production variance and real-world lighting."],
+        ].each do |title, body| %>
+          <div class="rounded-xl border border-gray-200 p-6">
+            <h3 class="text-sm font-semibold text-gray-900"><%= title %></h3>
+            <p class="mt-4 text-sm text-gray-600"><%= raw body %></p>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<div class="mt-32 sm:mt-40">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="relative isolate overflow-hidden bg-gray-900 px-6 py-16 shadow-2xl rounded-3xl sm:px-16 lg:flex lg:gap-x-20 lg:px-24 lg:py-20">
+      <div class="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-8 lg:text-left">
+        <h2 class="text-2xl font-bold tracking-tight text-white sm:text-3xl">Run your part through RoseVision.</h2>
+        <p class="mt-6 text-lg leading-8 text-gray-300">See how CAD-driven inspection works for your specific application.</p>
+        <div class="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
+          <a href="mailto:hello@rosecityrobotics.com?subject=Feasibility%20Sprint" class="btn btn-primary btn-lg">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Contact -->
+<div id="contact" class="mt-32 mb-32 sm:mt-40">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-2xl rounded-2xl bg-gray-50 p-10 lg:mx-0">
+      <h2 class="text-2xl font-bold tracking-tight text-gray-900">Contact</h2>
+      <dl class="mt-8 space-y-4 text-base leading-7 text-gray-600">
+        <div class="flex gap-x-4">
+          <dd><strong>Engineering + Sales:</strong> <a href="mailto:hello@rosecityrobotics.com" class="text-primary-600 hover:text-primary-500">hello@rosecityrobotics.com</a></dd>
+        </div>
+        <div class="flex gap-x-4">
+          <dd><strong>Location:</strong> Portland, Oregon</dd>
+        </div>
+        <div class="flex gap-x-4">
+          <dd><strong>Typical lead time:</strong> Feasibility in days; deployment aligns to your station build.</dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</div>
