@@ -1,0 +1,20 @@
+<%= render Container.new(outer_class: "mt-16 sm:mt-24") do %>
+  <header class="max-w-3xl">
+    <% if eyebrow %>
+      <p class="eyebrow text-primary-600 mb-3"><%= eyebrow %></p>
+    <% end %>
+    <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+      <%= title %>
+    </h1>
+    <% if intro %>
+      <p class="mt-6 text-lg text-gray-600">
+        <%= intro %>
+      </p>
+    <% end %>
+  </header>
+  <% if content %>
+    <div class="mt-12 sm:mt-16">
+      <%= content %>
+    </div>
+  <% end %>
+<% end %>

@@ -1,0 +1,44 @@
+---
+layout: default
+title: "Articles"
+description: "Research notes, deployment lessons, and what we're working on next at Rose City Robotics."
+permalink: /articles/
+---
+
+<%= render SimpleLayout.new(eyebrow: "From the lab", title: "Articles", intro: "Research notes, deployment lessons, and what we're working on next.") do %>
+  <% articles = collections.articles.resources %>
+  <% if articles.any? %>
+    <div class="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-2">
+      <% articles.each do |article| %>
+        <article class="flex flex-col">
+          <% if article.data.image %>
+            <a href="<%= article.relative_url %>" class="block overflow-hidden rounded-2xl">
+              <img src="<%= relative_url(article.data.image) %>" alt="" class="aspect-[16/9] w-full bg-gray-100 object-cover transition group-hover:scale-105" />
+            </a>
+          <% end %>
+          <div class="mt-6 flex flex-wrap items-center gap-x-3 text-xs text-gray-500">
+            <% if article.data.published_at %>
+              <time datetime="<%= article.data.published_at %>"><%= Date.parse(article.data.published_at.to_s).strftime("%B %-d, %Y") %></time>
+            <% end %>
+            <% if article.data.tags&.any? %>
+              <span aria-hidden="true">·</span>
+              <% article.data.tags.each do |tag| %>
+                <span class="inline-flex items-center rounded-full bg-primary-50 px-2 py-0.5 text-xs font-medium text-primary-700">
+                  <%= site.data.tags&.[](tag)&.[]("name") || tag %>
+                </span>
+              <% end %>
+            <% end %>
+          </div>
+          <h2 class="mt-3 text-xl font-semibold leading-tight text-gray-900">
+            <a href="<%= article.relative_url %>" class="hover:text-primary-600"><%= article.data.title %></a>
+          </h2>
+          <% if article.data.meta_description %>
+            <p class="mt-3 text-sm leading-6 text-gray-600"><%= article.data.meta_description %></p>
+          <% end %>
+        </article>
+      <% end %>
+    </div>
+  <% else %>
+    <p class="text-gray-600">No articles yet. Check back soon.</p>
+  <% end %>
+<% end %>

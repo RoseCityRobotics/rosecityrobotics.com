@@ -1,0 +1,41 @@
+---
+layout: default
+title: "Announcements"
+description: "Product updates, new features, and changelog for Rose City Robotics."
+permalink: /announcements/
+---
+
+<%= render SimpleLayout.new(eyebrow: "Changelog", title: "Announcements", intro: "Product updates, new features, fixes, and improvements.") do %>
+  <% announcements = collections.announcements.resources %>
+  <% if announcements.any? %>
+    <ul class="divide-y divide-gray-100">
+      <% announcements.each do |a| %>
+        <%
+          kind = a.data.kind&.to_s
+          kind_color = case kind
+                       when "new" then "bg-primary-50 text-primary-700"
+                       when "fix" then "bg-coral-50 text-coral-700"
+                       when "improvement" then "bg-blue-50 text-blue-700"
+                       when "update" then "bg-golden-yellow-50 text-golden-yellow-800"
+                       else "bg-gray-100 text-gray-700"
+                       end
+        %>
+        <li class="py-6">
+          <div class="flex items-center gap-3">
+            <% if kind %>
+              <span class="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold uppercase tracking-wide <%= kind_color %>"><%= kind %></span>
+            <% end %>
+            <% if a.data.published_at %>
+              <time class="text-sm text-gray-500" datetime="<%= a.data.published_at %>"><%= Date.parse(a.data.published_at.to_s).strftime("%B %-d, %Y") %></time>
+            <% end %>
+          </div>
+          <h2 class="mt-2 text-lg font-semibold text-gray-900">
+            <a href="<%= a.relative_url %>" class="hover:text-primary-600"><%= a.data.title %></a>
+          </h2>
+        </li>
+      <% end %>
+    </ul>
+  <% else %>
+    <p class="text-gray-600">No announcements yet.</p>
+  <% end %>
+<% end %>
