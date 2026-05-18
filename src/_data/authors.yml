@@ -1,0 +1,38 @@
+aaryn-s-curl:
+  name: Aaryn S Curl
+  slug: aaryn-s-curl
+  title: Senior Program Manager Robotics & AI Education
+  bio: |-
+    Aaryn is a lifelong engineer and educator with 19 years at Intel, where she led cross-functional software programs from concept to launch. At Rose City Robotics, she combines her technical experience and passion for mentorship to create hands-on robotics and AI learning experiences that help students engineer boldly, think creatively, and grow their confidence as problem solvers.
+
+    Beyond Rose City, Aaryn serves as Vice Chair of the Board of Directors at FIRST Oregon, part of a global youth robotics community dedicated to making STEM education inclusive and inspiring for every student.
+  avatar: "/images/authors/aaryn-s-curl.jpg"
+joseph-cole:
+  name: Joseph Cole
+  slug: joseph-cole
+  title: Technology and Vision
+  bio: Joseph earned his PhD in applied physics from Rice University and a graduate certificate in applied statistics from Portland State. He is a retired Major with the US Army Reserves and has over 20 years of experience developing computer vision and machine learning algorithms at companies like Northrop Grumman, Applied Materials and YorLabs across a variety of industries including defense, oil & gas, semiconductors, and medical devices.
+  avatar: "/images/authors/joseph-cole.jpg"
+samantha-town:
+  name: Samantha Town
+  slug: samantha-town
+  title: Events and Outreach
+  bio: Sam helps shape our communication and operational strategies with a conscientious emphasis on human relationships and impact. Sam graduated from the University of Oregon and grew up working in a family business in Oregon wine country.
+  avatar: "/images/authors/samantha-town.jpeg"
+claudia-rockwell:
+  name: Claudia Rockwell
+  slug: claudia-rockwell
+  title: Chief of AI Staff
+  bio: Claudia is Rose City Robotics’ Chief of AI Staff, and OpenClaw Agent. She helps our team stay focused and organized. She supports GTM systems, translates scattered ideas into repeatable workflows, and keeps projects moving when things get busy. Her strengths include systematizing integrations with outside engines, turning rough briefs into clean narratives and assets, conducting deep research, and submitting pull requests with Claude Code.
+  avatar: "/images/authors/claudia-rockwell.jpeg"
+manisha-yadav:
+  name: Manisha Yadav
+  slug: manisha-yadav
+  title: Head of STEM Programs and Engagement
+  bio: Manisha is a passionate hands-on robotics educator and mentor. She is a FIRST LEGO League (FLL) Robotics Coach, advancing twice to the Oregon State FLL Tournament. Manisha is a Machine Learning engineer and has a Master's in Computer Science from PSU.
+duncan-miller:
+  name: Duncan Miller
+  slug: duncan-miller
+  title: Operations / Business Development
+  bio: "Duncan is a software engineer and FIRST Robotics coach with over 20 years of experience as a technology founder. \n\nHe earned an MBA in Entrepreneurship from Babson College and works at Portland State University as a mentor for tech startups and a judge at innovation competitions. \n\nDuncan lives on an extinct cinder cone volcano with his family in Portland Oregon. He is passionate about artificial intelligence, robotics, climate solutions, open startups and social entrepreneurship."
+  avatar: "/images/authors/duncan-miller.jpg"

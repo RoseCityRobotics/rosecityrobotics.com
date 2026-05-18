@@ -1,0 +1,312 @@
+python:
+  name: Python
+  slug: python
+git:
+  name: Git
+  slug: git
+docker:
+  name: Docker
+  slug: docker
+rviz-visualization:
+  name: RViz visualization
+  slug: rviz-visualization
+c:
+  name: C++
+  slug: c
+nabcep:
+  name: NABCEP
+  slug: nabcep
+linux:
+  name: Linux
+  slug: linux
+nvidia:
+  name: NVIDIA
+  slug: nvidia
+genai:
+  name: GenAI
+  slug: genai
+robotics:
+  name: Robotics
+  slug: robotics
+control-systems:
+  name: Control Systems
+  slug: control-systems
+mathematics:
+  name: Mathematics
+  slug: mathematics
+algorithms:
+  name: Algorithms
+  slug: algorithms
+first:
+  name: FIRST
+  slug: first
+vex:
+  name: VEX
+  slug: vex
+unix:
+  name: Unix
+  slug: unix
+transformer-neural-networks:
+  name: Transformer Neural Networks
+  slug: transformer-neural-networks
+imitation-learning:
+  name: Imitation Learning
+  slug: imitation-learning
+ubuntu:
+  name: Ubuntu
+  slug: ubuntu
+ros2:
+  name: ROS2
+  slug: ros2
+pytorch:
+  name: PyTorch
+  slug: pytorch
+tensorflow:
+  name: TensorFlow
+  slug: tensorflow
+computer-vision:
+  name: Computer Vision
+  slug: computer-vision
+gamepad:
+  name: gamepad
+  slug: gamepad
+reinforcement-learning:
+  name: Reinforcement Learning
+  slug: reinforcement-learning
+model-predictive-control:
+  name: Model Predictive Control
+  slug: model-predictive-control
+training-data-collection:
+  name: Training Data Collection
+  slug: training-data-collection
+slam:
+  name: SLAM
+  slug: slam
+solar-photovoltaics:
+  name: Solar Photovoltaics
+  slug: solar-photovoltaics
+company-news:
+  name: Company News
+  slug: company-news
+batteries:
+  name: Batteries
+  slug: batteries
+solar-certification:
+  name: Solar Certification
+  slug: solar-certification
+object-detection:
+  name: object-detection
+  slug: object-detection
+build:
+  name: build
+  slug: build
+tf:
+  name: tf
+  slug: tf
+robotics-certification:
+  name: Robotics Certification
+  slug: robotics-certification
+yolo-networks:
+  name: YOLO Networks
+  slug: yolo-networks
+diagnostics:
+  name: diagnostics
+  slug: diagnostics
+recording:
+  name: recording
+  slug: recording
+convolutional-neural-networks:
+  name: Convolutional Neural Networks
+  slug: convolutional-neural-networks
+compilation:
+  name: compilation
+  slug: compilation
+yolo:
+  name: yolo
+  slug: yolo
+teleop:
+  name: teleop
+  slug: teleop
+hailo:
+  name: hailo
+  slug: hailo
+finetuning:
+  name: finetuning
+  slug: finetuning
+setup:
+  name: setup
+  slug: setup
+network:
+  name: network
+  slug: network
+system:
+  name: system
+  slug: system
+ssh:
+  name: ssh
+  slug: ssh
+data-prep:
+  name: data-prep
+  slug: data-prep
+camera:
+  name: camera
+  slug: camera
+raspberrypi:
+  name: raspberrypi
+  slug: raspberrypi
+calibration:
+  name: calibration
+  slug: calibration
+configuration:
+  name: configuration
+  slug: configuration
+deployment:
+  name: deployment
+  slug: deployment
+emergency:
+  name: emergency
+  slug: emergency
+operations:
+  name: operations
+  slug: operations
+firmware:
+  name: firmware
+  slug: firmware
+teensy:
+  name: teensy
+  slug: teensy
+troubleshooting:
+  name: troubleshooting
+  slug: troubleshooting
+annotation:
+  name: annotation
+  slug: annotation
+lidar:
+  name: lidar
+  slug: lidar
+serial:
+  name: serial
+  slug: serial
+visualization:
+  name: visualization
+  slug: visualization
+ros:
+  name: ros
+  slug: ros
+assembly:
+  name: assembly
+  slug: assembly
+detection:
+  name: detection
+  slug: detection
+maintenance:
+  name: maintenance
+  slug: maintenance
+debugging:
+  name: debugging
+  slug: debugging
+cartographer:
+  name: cartographer
+  slug: cartographer
+ultralytics:
+  name: ultralytics
+  slug: ultralytics
+reboot:
+  name: reboot
+  slug: reboot
+hardware:
+  name: hardware
+  slug: hardware
+mapping:
+  name: mapping
+  slug: mapping
+label-studio:
+  name: label-studio
+  slug: label-studio
+custom:
+  name: custom
+  slug: custom
+export:
+  name: export
+  slug: export
+machine-vision:
+  name: Machine Vision
+  slug: machine-vision
+cad:
+  name: CAD
+  slug: cad
+defect-detection:
+  name: Defect Detection
+  slug: defect-detection
+case-study:
+  name: Case Study
+  slug: case-study
+nav2:
+  name: nav2
+  slug: nav2
+networking:
+  name: networking
+  slug: networking
+fastdds:
+  name: fastdds
+  slug: fastdds
+rviz:
+  name: rviz
+  slug: rviz
+training:
+  name: training
+  slug: training
+agent:
+  name: agent
+  slug: agent
+microros:
+  name: microros
+  slug: microros
+navigation:
+  name: navigation
+  slug: navigation
+planning:
+  name: planning
+  slug: planning
+shutdown:
+  name: shutdown
+  slug: shutdown
+vm:
+  name: vm
+  slug: vm
+saving:
+  name: saving
+  slug: saving
+tuning:
+  name: tuning
+  slug: tuning
+development:
+  name: development
+  slug: development
+verification:
+  name: verification
+  slug: verification
+namespace:
+  name: namespace
+  slug: namespace
+sensors:
+  name: sensors
+  slug: sensors
+direct:
+  name: direct
+  slug: direct
+keyboard:
+  name: keyboard
+  slug: keyboard
+quickstart:
+  name: quickstart
+  slug: quickstart
+startup:
+  name: startup
+  slug: startup
+localization:
+  name: localization
+  slug: localization
+amcl:
+  name: amcl
+  slug: amcl
