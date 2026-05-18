@@ -6,7 +6,7 @@ permalink: /articles/
 ---
 
 <%= render SimpleLayout.new(eyebrow: "From the lab", title: "Articles", intro: "Research notes, deployment lessons, and what we're working on next.") do %>
-  <% articles = collections.articles.resources %>
+  <% articles = collections.articles.resources.reject { |a| a.data.unlisted } %>
   <% if articles.any? %>
     <div class="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-2">
       <% articles.each do |article| %>

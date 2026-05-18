@@ -9,6 +9,7 @@ tags:
 - solar-certification
 published_at: '2025-09-17T07:00:00Z'
 image: "/images/articles/rose-city-robotics-is-now-a-nabcep-accredited-training-provider/cover.png"
+unlisted: true
 ---
 
 **Real Credentials. Real Solar. Real Impact.**
