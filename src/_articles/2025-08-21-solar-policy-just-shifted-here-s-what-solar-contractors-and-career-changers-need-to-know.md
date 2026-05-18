@@ -9,6 +9,7 @@ tags:
 - solar-certification
 published_at: '2025-08-21T17:00:00Z'
 image: "/images/articles/solar-policy-just-shifted-here-s-what-solar-contractors-and-career-changers-need-to-know/cover.jpg"
+unlisted: true
 ---
 
 **The Rules Just Changed. Here’s What to Do About It.**

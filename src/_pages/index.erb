@@ -81,7 +81,7 @@ permalink: /
 </section>
 
 <!-- Latest articles -->
-<% latest_articles = collections.articles.resources.first(3) %>
+<% latest_articles = collections.articles.resources.reject { |a| a.data.unlisted }.first(3) %>
 <% if latest_articles.any? %>
   <section class="mt-24 mb-24">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
