@@ -21,6 +21,138 @@
 [build.processing.html]
   pretty_urls = true
 
+# --- Cutover redirects (Rails app -> static site) ---
+# Public content URLs (/articles/, /events/) map 1:1 via pretty permalinks and
+# need no redirects. Specific rules come first; Netlify evaluates top-to-bottom
+# and stops at the first match.
+
+# /pricing was intentionally removed -> send to home (301 permanent)
+[[redirects]]
+  from = "/pricing"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/pricing/"
+  to = "/"
+  status = 301
+
+# Contact/newsletter/inquiry forms are gone -> the /contact page (a mailto) is
+# the single contact surface now (301).
+[[redirects]]
+  from = "/inquiries"
+  to = "/contact/"
+  status = 301
+
+[[redirects]]
+  from = "/inquiries/*"
+  to = "/contact/"
+  status = 301
+
+[[redirects]]
+  from = "/contacts"
+  to = "/contact/"
+  status = 301
+
+[[redirects]]
+  from = "/contacts/*"
+  to = "/contact/"
+  status = 301
+
+# Docs and announcements collections were dropped in the migration (they were
+# help/changelog surfaces for the sunset product) -> send to home (301).
+[[redirects]]
+  from = "/docs"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/*"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/announcements"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/announcements/*"
+  to = "/"
+  status = 301
+
+# Dead authenticated/app-only surfaces -> 410 Gone so search engines drop them.
+# to = "/404.html" supplies the response body; the 410 status is what matters.
+[[redirects]]
+  from = "/admin/*"
+  to = "/404.html"
+  status = 410
+
+[[redirects]]
+  from = "/accounts/*"
+  to = "/404.html"
+  status = 410
+
+[[redirects]]
+  from = "/account/*"
+  to = "/404.html"
+  status = 410
+
+[[redirects]]
+  from = "/account_invitations/*"
+  to = "/404.html"
+  status = 410
+
+[[redirects]]
+  from = "/api/*"
+  to = "/404.html"
+  status = 410
+
+[[redirects]]
+  from = "/api_tokens/*"
+  to = "/404.html"
+  status = 410
+
+[[redirects]]
+  from = "/subscriptions/*"
+  to = "/404.html"
+  status = 410
+
+[[redirects]]
+  from = "/charges/*"
+  to = "/404.html"
+  status = 410
+
+[[redirects]]
+  from = "/users/*"
+  to = "/404.html"
+  status = 410
+
+[[redirects]]
+  from = "/user/*"
+  to = "/404.html"
+  status = 410
+
+[[redirects]]
+  from = "/cad_projects/*"
+  to = "/404.html"
+  status = 410
+
+[[redirects]]
+  from = "/dashboard"
+  to = "/404.html"
+  status = 410
+
+[[redirects]]
+  from = "/notifications/*"
+  to = "/404.html"
+  status = 410
+
+[[redirects]]
+  from = "/agreements/*"
+  to = "/404.html"
+  status = 410
+
 [[headers]]
   for = "*"
   [headers.values]

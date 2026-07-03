@@ -12,7 +12,8 @@ class Header < Bridgetown::Component
     [
       {name: "About", href: "/about/"},
       {name: "Why It Works", href: "/why-it-works/"},
-      {name: "Articles", href: "/articles/"}
+      {name: "Articles", href: "/articles/"},
+      {name: "Events", href: "/events/"}
     ]
   end
 

@@ -10,9 +10,8 @@ class Footer < Bridgetown::Component
       {name: "About", href: "/about/"},
       {name: "Why It Works", href: "/why-it-works/"},
       {name: "Articles", href: "/articles/"},
-      {name: "Announcements", href: "/announcements/"},
       {name: "Events", href: "/events/"},
-      {name: "Contact", href: "mailto:hello@rosecityrobotics.com"}
+      {name: "Contact", href: "/contact/"}
     ]
   end
 end
