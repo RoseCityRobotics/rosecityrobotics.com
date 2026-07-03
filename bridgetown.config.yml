@@ -4,6 +4,10 @@ permalink: pretty
 template_engine: erb
 timezone: America/Los_Angeles
 
+# Publish future-dated content. Essential for the events collection (upcoming
+# events are the point) and for any scheduled articles.
+future: true
+
 kramdown:
   input: GFM
 
@@ -15,16 +19,6 @@ collections:
   articles:
     output: true
     permalink: "/articles/:slug/"
-    sort_by: published_at
-    sort_direction: descending
-  docs:
-    output: true
-    permalink: "/docs/:slug/"
-    sort_by: slot
-    sort_direction: ascending
-  announcements:
-    output: true
-    permalink: "/announcements/:slug/"
     sort_by: published_at
     sort_direction: descending
   events:
