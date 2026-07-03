@@ -81,6 +81,69 @@
   to = "/"
   status = 301
 
+# Legacy blog URLs. The old Rails site served articles at dated paths
+# /YYYY/MM/DD/:slug/. This blanket rule (4 path segments) maps any of them to
+# the current article; it only fires when no static file matches, and no real
+# 4-segment HTML route exists, so it can't shadow live pages.
+[[redirects]]
+  from = "/:year/:month/:day/:slug"
+  to = "/articles/:slug/"
+  status = 301
+
+# Articles whose slug changed over time (FriendlyId history). Redirect the old
+# slug to the current one. Old *dated* URLs with these slugs chain: the blanket
+# rule above sends /YYYY/MM/DD/<old> -> /articles/<old>/, which then matches
+# one of these -> /articles/<current>/.
+[[redirects]]
+  from = "/articles/data-center-server-recycling-automation"
+  to = "/articles/reducing-the-impact-of-data-centers-with-mathematics/"
+  status = 301
+
+[[redirects]]
+  from = "/articles/reducing-the-impact-of-data-centers-with-mathmatics"
+  to = "/articles/reducing-the-impact-of-data-centers-with-mathematics/"
+  status = 301
+
+[[redirects]]
+  from = "/articles/portland-state-university-nvidia-advancing-ai-with-langchain"
+  to = "/articles/langchain-nvidia-nim-ai-innovation-at-gtc-2025/"
+  status = 301
+
+[[redirects]]
+  from = "/articles/new-free-course-nasa-robotics-alliance-grant-scholarship-overview"
+  to = "/articles/new-first-robotics-competition-frc-teams-unlock-nasa-grant-opportunity-for-your-robotics-journey/"
+  status = 301
+
+[[redirects]]
+  from = "/articles/new-ftc-or-frc-team-unlock-nasa-support-for-your-robotics-journey"
+  to = "/articles/new-first-robotics-competition-frc-teams-unlock-nasa-grant-opportunity-for-your-robotics-journey/"
+  status = 301
+
+[[redirects]]
+  from = "/articles/new-first-teams-ftc-and-frc-unlock-nasa-grant-opportunity-for-your-robotics-journey"
+  to = "/articles/new-first-robotics-competition-frc-teams-unlock-nasa-grant-opportunity-for-your-robotics-journey/"
+  status = 301
+
+[[redirects]]
+  from = "/articles/waivolt-earns-nabcep-accredited-training-company"
+  to = "/articles/waivolt-by-rose-city-robotics-becomes-natc-approved-and-launches-free-nabcep-pv-associate-practice-exam/"
+  status = 301
+
+[[redirects]]
+  from = "/articles/rose-city-robotics-is-now-a-nabcep-accredited-solar-provider"
+  to = "/articles/rose-city-robotics-is-now-a-nabcep-accredited-training-provider/"
+  status = 301
+
+[[redirects]]
+  from = "/articles/why-in-person-robotics-with-a-cohort-beats-going-solo"
+  to = "/articles/why-robotics-in-person-with-a-cohort-beats-going-solo/"
+  status = 301
+
+[[redirects]]
+  from = "/articles/the-term-full-stack-engineer-is-changing-fast"
+  to = "/articles/my-definition-of-full-stack-engineer-is-changing-fast/"
+  status = 301
+
 # Dead authenticated/app-only surfaces -> 410 Gone so search engines drop them.
 # to = "/404.html" supplies the response body; the 410 status is what matters.
 [[redirects]]
