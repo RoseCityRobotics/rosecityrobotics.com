@@ -24,16 +24,16 @@ layout: default
       <% author_key = resource.data.author %>
       <% if author_key && site.data.authors && site.data.authors[author_key] %>
         <span aria-hidden="true">·</span>
-        <span>By <%= site.data.authors[author_key]["name"] %></span>
+        <span>By <a href="<%= relative_url("/articles/author/#{author_key}/") %>" class="font-medium text-gray-700 hover:text-primary-600"><%= site.data.authors[author_key]["name"] %></a></span>
       <% end %>
       <% if resource.data.tags&.any? %>
         <span aria-hidden="true">·</span>
         <ul class="flex flex-wrap gap-2">
           <% resource.data.tags.each do |tag| %>
             <li>
-              <span class="inline-flex items-center rounded-full bg-primary-50 px-2.5 py-0.5 text-xs font-medium text-primary-700">
+              <a href="<%= relative_url("/articles/tag/#{tag}/") %>" class="inline-flex items-center rounded-full bg-primary-50 px-2.5 py-0.5 text-xs font-medium text-primary-700 hover:bg-primary-100">
                 <%= site.data.tags&.[](tag)&.[]("name") || tag %>
-              </span>
+              </a>
             </li>
           <% end %>
         </ul>

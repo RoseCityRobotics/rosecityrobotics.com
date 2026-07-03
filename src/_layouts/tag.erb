@@ -1,12 +1,10 @@
 ---
 layout: default
-title: "Articles"
-description: "Research notes, deployment lessons, and what we're working on next at Rose City Robotics."
-permalink: /articles/
 ---
-
-<%= render SimpleLayout.new(eyebrow: "From the lab", title: "Articles", intro: "Research notes, deployment lessons, and what we're working on next.") do %>
-  <% articles = collections.articles.resources.reject { |a| a.data.unlisted } %>
+<% tag_slug = resource.data.tag %>
+<% tag_name = site.data.tags&.[](tag_slug)&.[]("name") || tag_slug %>
+<%= render SimpleLayout.new(eyebrow: "Tagged", title: tag_name, intro: "Articles tagged #{tag_name}.") do %>
+  <% articles = collections.articles.resources.reject { |a| a.data.unlisted }.select { |a| a.data.tags&.include?(tag_slug) } %>
   <% if articles.any? %>
     <div class="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-2">
       <% articles.each do |article| %>
