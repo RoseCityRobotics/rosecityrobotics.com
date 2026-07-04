@@ -152,6 +152,225 @@
   to = "/articles/my-definition-of-full-stack-engineer-is-changing-fast/"
   status = 301
 
+# Legacy Rails content redirects (ported from the old app's routes.rb). Old
+# marketing/app paths -> their nearest static equivalent. NOTE: /contact is
+# intentionally NOT here — it is now a real page.
+
+# External destinations preserved from the old site
+[[redirects]]
+  from = "/nabcep_ethics"
+  to = "https://www.nabcep.org/about-us/ethics-policy/"
+  status = 301
+
+[[redirects]]
+  from = "/irec_ethics"
+  to = "https://irecusa.org/wp-content/uploads/2021/06/IREC-Credentialing-Code-of-Ethics-2013.pdf"
+  status = 301
+
+[[redirects]]
+  from = "/ftc"
+  to = "https://theroboticscollaborative.org/first_robotics"
+  status = 301
+
+[[redirects]]
+  from = "/caldera_robotica"
+  to = "https://theroboticscollaborative.org/first_robotics"
+  status = 301
+
+[[redirects]]
+  from = "/first_tech_challenge_team_30603"
+  to = "https://theroboticscollaborative.org/first_robotics"
+  status = 301
+
+# Old policy/marketing pages -> current equivalents
+[[redirects]]
+  from = "/policies/privacy"
+  to = "/privacy/"
+  status = 301
+
+[[redirects]]
+  from = "/policies/terms"
+  to = "/terms/"
+  status = 301
+
+[[redirects]]
+  from = "/research"
+  to = "/team/joseph-cole-phd/"
+  status = 301
+
+[[redirects]]
+  from = "/instructors"
+  to = "/about/"
+  status = 301
+
+[[redirects]]
+  from = "/instructors/*"
+  to = "/about/"
+  status = 301
+
+[[redirects]]
+  from = "/open"
+  to = "/about/"
+  status = 301
+
+[[redirects]]
+  from = "/open/*"
+  to = "/about/"
+  status = 301
+
+[[redirects]]
+  from = "/newsletter"
+  to = "/articles/"
+  status = 301
+
+# Guides moved to docs, which were then dropped -> home
+[[redirects]]
+  from = "/guides"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/*"
+  to = "/"
+  status = 301
+
+# Removed features / discontinued product surfaces -> home
+[[redirects]]
+  from = "/professionals"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/professionals/*"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/certifications"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/certifications/*"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/solar_heros"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/solar_heros/*"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/courses"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/courses/*"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/chats"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/chats/*"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/practice_exams"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/practice_exams/*"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/exam_questions"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/exam_questions/*"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/questions"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/questions/*"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/messages"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/messages/*"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/instructor/questions"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/instruct/questions"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/role/new"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/waivolt"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/wai_chat"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/conduct"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/honor_system"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/record_keeping"
+  to = "/"
+  status = 301
+
+# /api_docs route existed but its view was already gone before the migration
+[[redirects]]
+  from = "/api_docs"
+  to = "/"
+  status = 301
+
 # Dead authenticated/app-only surfaces -> 410 Gone so search engines drop them.
 # to = "/404.html" supplies the response body; the 410 status is what matters.
 [[redirects]]
