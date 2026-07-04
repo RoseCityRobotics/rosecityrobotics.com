@@ -10,7 +10,9 @@
       full_title = page_title ? "#{page_title} — #{site_title}" : site_title
       description = resource.data.description || site.metadata.description
       og_image = resource.data.image ? relative_url(resource.data.image) : relative_url(site.metadata.default_image || "/images/joe_robot_battery_lab.png")
-      canonical = resource.data.canonical_url || "#{site.metadata.url}#{resource.relative_url}"
+      # collapse accidental double slashes (the homepage's relative_url is "//"),
+      # but leave the "https://" scheme and any external canonical_url untouched.
+      canonical = resource.data.canonical_url || "#{site.metadata.url}#{resource.relative_url}".gsub(%r{(?<!:)//+}, "/")
     %>
 
     <title><%= full_title %></title>
