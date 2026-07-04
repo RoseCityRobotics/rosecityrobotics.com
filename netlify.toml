@@ -124,9 +124,17 @@
   to = "/articles/new-first-robotics-competition-frc-teams-unlock-nasa-grant-opportunity-for-your-robotics-journey/"
   status = 301
 
+# The Waivolt/NATC post was deleted -> send its current slug (and the dated URL,
+# which chains here via the blanket rule above) and its historical slug to the
+# articles index rather than a 404.
+[[redirects]]
+  from = "/articles/waivolt-by-rose-city-robotics-becomes-natc-approved-and-launches-free-nabcep-pv-associate-practice-exam"
+  to = "/articles/"
+  status = 301
+
 [[redirects]]
   from = "/articles/waivolt-earns-nabcep-accredited-training-company"
-  to = "/articles/waivolt-by-rose-city-robotics-becomes-natc-approved-and-launches-free-nabcep-pv-associate-practice-exam/"
+  to = "/articles/"
   status = 301
 
 [[redirects]]
