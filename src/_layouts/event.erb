@@ -2,8 +2,10 @@
 layout: default
 ---
 <%
-  start_dt = resource.data.start_datetime && Time.parse(resource.data.start_datetime.to_s)
-  end_dt = resource.data.end_datetime && Time.parse(resource.data.end_datetime.to_s)
+  # Stored as UTC (…Z); display in the site timezone (America/Los_Angeles, set
+  # via bridgetown.config.yml `timezone`, which sets ENV["TZ"] at build time).
+  start_dt = resource.data.start_datetime && Time.parse(resource.data.start_datetime.to_s).getlocal
+  end_dt = resource.data.end_datetime && Time.parse(resource.data.end_datetime.to_s).getlocal
 %>
 <%= render Container.new(outer_class: "mt-16 sm:mt-24") do %>
   <article class="max-w-3xl">

@@ -2,8 +2,8 @@
 layout: event
 title: Portland State of Charge — Battery & Climate
 slug: portland-state-of-charge-battery-climate
-start_datetime: '2026-07-16T12:00:00Z'
-end_datetime: '2026-07-16T14:00:00Z'
+start_datetime: '2026-07-16T19:00:00Z'
+end_datetime: '2026-07-16T21:00:00Z'
 location: UpStart Collective, 111 SW 5th Ave, Portland, OR 97204
 registration_link: https://lu.ma/czpip42k
 ---
