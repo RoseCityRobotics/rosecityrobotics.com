@@ -2,8 +2,8 @@
 layout: event
 title: Portland State of Charge — Battery & Climate
 slug: portland-state-of-charge-battery-climate
-start_datetime: '2026-07-16T19:00:00Z'
-end_datetime: '2026-07-16T21:00:00Z'
+start_datetime: '2026-07-16T12:00:00Z'
+end_datetime: '2026-07-16T14:00:00Z'
 location: UpStart Collective, 111 SW 5th Ave, Portland, OR 97204
 registration_link: https://lu.ma/czpip42k
 ---
@@ -18,21 +18,13 @@ Hosted by Duncan Miller (PNW Battery Collaborative Portland chapter; E8 Angels O
 
 Two acts. First, four Oregon battery founders each give an 8-minute lightning talk pitching what they're building — long-duration storage, EV infrastructure, battery manufacturing tech, public-company scale. Then the same founders sit on a moderated panel working through how Oregon battery tech actually gets funded: what the capital stack looks like today, what it took to get there, and what Oregon capital did or didn't do along the way.
 
-**Founder Lightning Talks:**
-
-Ben Brown (PhD) with Skip Technology
-
-Joseph Cole (PhD) with Rose City Robotics
-
-Lineup being finalized; more speakers announced in the weeks ahead.
-
 **Run of Show:**
 
-12:00pm: Doors open & check-in  
-12:15pm: Opening remarks  
-12:25pm: Lightning talks (4 × 8 min)  
-1:00pm: Moderated panel & audience Q&A  
-1:45pm: Announcements, resources, & job opportunities  
+12:00pm: Doors open & check-in
+12:15pm: Opening remarks
+12:25pm: Lightning talks (4 × 8 min)
+1:00pm: Moderated panel & audience Q&A
+1:45pm: Announcements, resources, & job opportunities
 2:00pm: Event concludes
 
 **Logistics:**
