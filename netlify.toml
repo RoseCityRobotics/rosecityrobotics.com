@@ -443,6 +443,14 @@
   to = "/404.html"
   status = 410
 
+# Catch-all: any other old Rails route not handled above -> home. Real pages and
+# assets are served before redirects, and every specific rule above is matched
+# first (Netlify is top-to-bottom), so this only sweeps up unmapped legacy paths.
+[[redirects]]
+  from = "/*"
+  to = "/"
+  status = 301
+
 [[headers]]
   for = "*"
   [headers.values]
