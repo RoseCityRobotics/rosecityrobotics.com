@@ -17,7 +17,7 @@ permalink: /events/
       <h2 class="text-xl font-semibold text-gray-900">Upcoming</h2>
       <ul class="mt-6 grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2">
         <% upcoming.each do |e| %>
-          <% start_dt = Time.parse(e.data.start_datetime.to_s) %>
+          <% start_dt = Time.parse(e.data.start_datetime.to_s).getlocal %>
           <li class="rounded-2xl border border-gray-200 p-6">
             <time class="text-xs uppercase tracking-wide text-primary-600 font-semibold" datetime="<%= start_dt.iso8601 %>">
               <%= start_dt.strftime("%B %-d, %Y · %-l:%M %p") %>
@@ -42,7 +42,7 @@ permalink: /events/
       <h2 class="text-xl font-semibold text-gray-900">Past events</h2>
       <ul class="mt-6 divide-y divide-gray-100">
         <% past.each do |e| %>
-          <% start_dt = Time.parse(e.data.start_datetime.to_s) %>
+          <% start_dt = Time.parse(e.data.start_datetime.to_s).getlocal %>
           <li class="py-4">
             <time class="text-xs text-gray-500" datetime="<%= start_dt.iso8601 %>">
               <%= start_dt.strftime("%B %-d, %Y") %>
