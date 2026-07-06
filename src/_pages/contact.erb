@@ -1,34 +1,58 @@
 ---
 layout: default
 title: "Contact"
-description: "Get in touch with Rose City Robotics."
+description: "Get in touch with Rose City Robotics — email us or visit our studio in downtown Portland."
 permalink: /contact/
 ---
 
-<%= render SimpleLayout.new(eyebrow: "Say hello", title: "Contact", intro: "Questions, partnerships, or press — we'd love to hear from you.") do %>
-  <div class="prose prose-lg max-w-none prose-headings:text-gray-900 prose-a:text-primary-600 hover:prose-a:text-primary-700">
-    <p>The fastest way to reach us is email:</p>
-    <p>
-      <a href="mailto:hello@rosecityrobotics.com" class="text-xl font-semibold">hello@rosecityrobotics.com</a>
-    </p>
-    <p>We read every message and typically reply within a couple of business days.</p>
+<%= render SimpleLayout.new(eyebrow: "Contact", title: "Reach the team", intro: "Email is the fastest way to reach us — we read every message. Or find us in downtown Portland.") do %>
+  <div class="grid grid-cols-1 gap-10 lg:grid-cols-5 lg:gap-12">
+    <div class="lg:col-span-2">
+      <p class="eyebrow text-primary-600">Email us</p>
+      <a
+        href="mailto:hello@rosecityrobotics.com"
+        class="group mt-3 inline-flex items-baseline gap-2 rounded text-2xl font-bold tracking-tight text-gray-900 transition-colors hover:text-primary-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 sm:text-3xl"
+      >
+        <span class="border-b-2 border-primary-500/70 group-hover:border-primary-600">hello@rosecityrobotics.com</span>
+        <svg class="h-5 w-5 flex-none translate-y-1 text-primary-500 transition-transform duration-200 group-hover:translate-x-1 motion-reduce:transition-none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M5 12h14M13 6l6 6-6 6" />
+        </svg>
+      </a>
+      <p class="mt-4 text-sm text-gray-500">We usually reply within a couple of business days.</p>
 
-    <h2>Address</h2>
-    <address class="not-italic">
-      Rose City Robotics<br>
-      111 SW 5th Ave, 5th Floor<br>
-      Portland, OR 97204
-    </address>
-  </div>
+      <div class="my-8 h-px bg-gray-200"></div>
 
-  <div class="mt-8 overflow-hidden rounded-2xl border border-gray-200">
-    <iframe
-      title="Map to Rose City Robotics — 111 SW 5th Ave, Portland, OR 97204"
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.3995797807765!2d-122.67889932348919!3d45.52216407107509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54950a06b198f96b%3A0x83a60dc1c0cfa1f9!2sU.S.%20Bancorp%20Tower!5e0!3m2!1sen!2sus!4v1783357336996!5m2!1sen!2sus"
-      class="h-96 w-full border-0"
-      loading="lazy"
-      referrerpolicy="strict-origin-when-cross-origin"
-      allowfullscreen
-    ></iframe>
+      <p class="eyebrow text-primary-600">Visit</p>
+      <address class="mt-3 text-lg not-italic leading-7 text-gray-700">
+        <span class="font-semibold text-gray-900">Rose City Robotics</span><br />
+        111 SW 5th Ave, 5th Floor<br />
+        Portland, OR 97204
+      </address>
+      <p class="mt-3 font-mono text-xs tracking-wider text-gray-500">45.5222° N · 122.6789° W</p>
+      <a
+        href="https://www.google.com/maps/dir/?api=1&destination=111+SW+5th+Ave%2C+Portland%2C+OR+97204"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn btn-link mt-5 inline-flex items-center gap-1.5 px-0"
+      >
+        Get directions
+        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M7 17 17 7M7 7h10v10" />
+        </svg>
+      </a>
+    </div>
+
+    <div class="lg:col-span-3">
+      <div class="h-full overflow-hidden rounded-2xl border border-gray-200 shadow-sm">
+        <iframe
+          title="Map to Rose City Robotics — 111 SW 5th Ave, Portland, OR 97204"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.3995797807765!2d-122.67889932348919!3d45.52216407107509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54950a06b198f96b%3A0x83a60dc1c0cfa1f9!2sU.S.%20Bancorp%20Tower!5e0!3m2!1sen!2sus!4v1783357336996!5m2!1sen!2sus"
+          class="h-full min-h-[360px] w-full border-0 lg:min-h-[440px]"
+          loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
   </div>
 <% end %>
