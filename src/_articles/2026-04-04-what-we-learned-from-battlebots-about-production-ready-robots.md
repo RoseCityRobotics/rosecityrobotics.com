@@ -8,7 +8,7 @@ tags:
 - company-news
 published_at: '2026-04-04T19:00:00Z'
 image: "/images/articles/what-we-learned-from-battlebots-about-production-ready-robots/cover.jpeg"
-meta_description: A backstage tour at BattleBots taught us the real meaning of production-ready robotics — every robot has a fully fired-up backup. What that means for humanoid demos and robotic battery disassembly.
+meta_description: A backstage tour at BattleBots taught us the real meaning of production-ready robotics — every BattleBot has a fully fired-up backup ready to go on the sideline. What that means for humanoid demos and robotic battery disassembly.
 ---
 
 Last week the Rose City Robotics team was in Las Vegas. You know that place where everything that happens there stays there? You know what we did on our big night out? We got VIP tickets to BattleBots Destruct-a-thon. Yes, we are robot nerds.
