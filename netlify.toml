@@ -107,6 +107,11 @@
 # rule above sends /YYYY/MM/DD/<old> -> /articles/<old>/, which then matches
 # one of these -> /articles/<current>/.
 [[redirects]]
+  from = "/articles/is-your-automation-vendor-actually-building-for-you-or-for-their-next-investor"
+  to = "/articles/what-we-learned-from-battlebots-about-production-ready-robots/"
+  status = 301
+
+[[redirects]]
   from = "/articles/data-center-server-recycling-automation"
   to = "/articles/reducing-the-impact-of-data-centers-with-mathematics/"
   status = 301
