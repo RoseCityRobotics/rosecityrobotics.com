@@ -26,6 +26,18 @@
 # need no redirects. Specific rules come first; Netlify evaluates top-to-bottom
 # and stops at the first match.
 
+# Redesign redirects: the RoseVision "why it works" page became /technology/, and
+# Joseph Cole's standalone profile was removed (he's now a consultant on /about/).
+[[redirects]]
+  from = "/why-it-works/*"
+  to = "/technology/"
+  status = 301
+
+[[redirects]]
+  from = "/team/joseph-cole-phd/"
+  to = "/about/#our-team"
+  status = 301
+
 # /pricing was intentionally removed -> send to home (301 permanent)
 [[redirects]]
   from = "/pricing"
@@ -195,7 +207,7 @@
 
 [[redirects]]
   from = "/research"
-  to = "/team/joseph-cole-phd/"
+  to = "/articles/"
   status = 301
 
 [[redirects]]

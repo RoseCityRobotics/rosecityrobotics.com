@@ -8,8 +8,8 @@ class Footer < Bridgetown::Component
   def navigation_items
     [
       {name: "About", href: "/about/"},
-      {name: "Why It Works", href: "/why-it-works/"},
-      {name: "Articles", href: "/articles/"},
+      {name: "Technology", href: "/technology/"},
+      {name: "Research", href: "/articles/"},
       {name: "Events", href: "/events/"},
       {name: "Contact", href: "/contact/"}
     ]

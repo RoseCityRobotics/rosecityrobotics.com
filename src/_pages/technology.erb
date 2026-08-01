@@ -1,0 +1,142 @@
+---
+layout: default
+title: "How Robotic Battery Disassembly Works"
+description: "Robots trained by expert technicians through teleoperation take end-of-life EV battery packs apart safely — recovering modules and cells for second life and cleaner recycling feedstock."
+permalink: /technology/
+---
+
+<!-- Hero -->
+<div class="mt-24 sm:mt-32">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-3xl text-center">
+      <p class="eyebrow text-primary-600">Technology</p>
+      <h1 class="mt-4 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl">
+        How robotic battery <br class="hidden sm:inline" /> disassembly works
+      </h1>
+      <p class="mt-8 text-lg leading-8 text-gray-600">
+        Every EV maker builds packs differently — sonic welds, adhesives, proprietary fasteners — and designs change several times a year. Traditional automation can't keep up, and manual teardown costs about $240 in expert labor per pack before anyone touches a cell. Our answer: robots that learn disassembly the way apprentices do — by watching experts work.
+      </p>
+    </div>
+    <div class="mx-auto mt-16 max-w-5xl">
+      <img src="<%= relative_url('/images/rozero_annotated.jpg') %>" alt="RoZero robotic disassembly system" class="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover" />
+    </div>
+  </div>
+</div>
+
+<!-- The problem -->
+<div id="the-problem" class="mt-32 sm:mt-40">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-2xl lg:mx-0">
+      <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">The problem</h2>
+    </div>
+    <div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
+      <p class="text-lg leading-8 text-gray-600">Recyclers face a bad tradeoff. Manual disassembly recovers the most value, but it puts technicians next to thermal-runaway fires and lethal voltage. Whole-pack shredding is safer for people and scales — but it burns energy, consumes chemicals, and grinds reusable modules into lower-value feedstock. And no two packs come apart the same way: pack designs are non-standard and change several times a year, so fixed automation goes stale as fast as it's built.</p>
+      <div class="mt-10 rounded-xl border-l-4 border-golden-yellow-500 bg-golden-yellow-50 p-6">
+        <p class="text-base font-medium text-gray-900">Reverse-engineering a single pack takes two expert technicians about three hours. Batteries can hold lethal voltage and enter thermal runaway from one wrong cut.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- The approach -->
+<div id="the-approach" class="mt-32 sm:mt-40">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-2xl lg:mx-0">
+      <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">The approach</h2>
+    </div>
+    <div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
+      <p class="text-lg leading-8 text-gray-600">Instead of programming the robot for every pack, we teach it. Our systems learn from human demonstrations using transformer-based imitation learning — the Stanford ALOHA / Action Chunking with Transformers (ACT) lineage. On top of that, RCR adds a GraphRAG layer for robustness and explainability, and is researching Active Inference with Portland State University.</p>
+      <p class="mt-6 text-lg leading-8 text-gray-600">The robot runs in two modes. In <strong class="text-gray-900">teleoperation</strong>, an expert works the pack remotely — collecting training data and serving as the safety fallback. In <strong class="text-gray-900">autonomous</strong> mode, the robot works packs on its own to scale throughput. Every human intervention becomes a new training sample.</p>
+
+      <div class="mt-12 rounded-2xl bg-gray-50 p-8">
+        <h3 class="text-lg font-semibold leading-8 text-gray-900 mb-6">Five core skills we're training</h3>
+        <ul class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+          <% [
+            "Locate and classify fasteners",
+            "Identify and avoid shorting high-voltage rails",
+            "Use disassembly tools as robot end effectors",
+            "Delid the pack",
+            "Pick & place scrap or reusable components",
+          ].each do |skill| %>
+            <li class="flex items-center gap-x-3 rounded-lg bg-white px-4 py-3">
+              <svg aria-hidden="true" class="h-5 w-5 flex-none text-secondary-600" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+              </svg>
+              <span class="text-sm font-medium text-gray-900"><%= skill %></span>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Safety by design -->
+<div id="safety" class="mt-32 sm:mt-40">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="lg:grid lg:grid-cols-2 lg:gap-16 lg:items-center">
+      <div class="mx-auto max-w-2xl lg:mx-0">
+        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Safety by design</h2>
+        <p class="mt-6 text-lg leading-8 text-gray-600">No person belongs next to a pack in thermal runaway. Disassembly happens by teleoperation inside an isolated, nitrogen-blanketed cell — workers are physically separated from the pack. The cell adds fume extraction and fire suppression, and cells destined for second life are sorted conservatively: we bias against false positives so a marginal cell is recycled, not reused.</p>
+      </div>
+      <div class="mt-12 lg:mt-0">
+        <img src="<%= relative_url('/images/team_two_operators.jpg') %>" alt="Operators running a teleoperated disassembly" class="aspect-[4/3] w-full rounded-2xl bg-gray-100 object-cover" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- What comes out -->
+<div id="what-comes-out" class="mt-32 sm:mt-40">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-2xl lg:mx-0">
+      <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">What comes out</h2>
+    </div>
+    <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
+      <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
+        <% [
+          ["Modules and cells for second life", "Palletized modules sorted for stationary storage or remanufactured packs — an end-of-life pack often still holds about 80% of its capacity."],
+          ["Salvaged electronics", "Reusable harnesses and BMS electronics recovered intact instead of shredded."],
+          ["Cleaner recycling feedstock", "What is recycled arrives cleaner: simpler mechanical separation, fewer chemical inputs, lower energy, and higher critical-metal recovery."],
+        ].each do |title, body| %>
+          <div class="flex flex-col">
+            <dt class="text-base font-semibold leading-7 text-gray-900"><%= title %></dt>
+            <dd class="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
+              <p class="flex-auto"><%= body %></p>
+            </dd>
+          </div>
+        <% end %>
+      </dl>
+    </div>
+  </div>
+</div>
+
+<!-- Where we are -->
+<div id="where-we-are" class="mt-32 sm:mt-40">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="lg:grid lg:grid-cols-2 lg:gap-16 lg:items-center">
+      <div class="mt-12 lg:mt-0 lg:order-last">
+        <img src="<%= relative_url('/images/lab_wide_rig.jpg') %>" alt="The Rose City Robotics disassembly lab" class="aspect-[4/3] w-full rounded-2xl bg-gray-100 object-cover" />
+      </div>
+      <div class="mx-auto max-w-2xl lg:mx-0">
+        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Where we are</h2>
+        <p class="mt-6 text-lg leading-8 text-gray-600">We're honest about the stage: this is research moving toward pilot. We've demonstrated cell extraction from e-bike packs on ALOHA-design hardware. Now we're scaling to full EV packs using off-the-shelf industrial ABB arms, with Loupe Robotics. Oak Ridge National Laboratory is our official evaluation partner and is providing a Nissan Leaf pack for evaluation.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<div class="mt-32 sm:mt-40 mb-32">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="relative isolate overflow-hidden bg-gray-900 px-6 py-16 shadow-2xl rounded-3xl sm:px-16 lg:flex lg:gap-x-20 lg:px-24 lg:py-20">
+      <div class="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-8 lg:text-left">
+        <h2 class="text-2xl font-bold tracking-tight text-white sm:text-3xl">Working on battery end-of-life? We want to talk.</h2>
+        <p class="mt-6 text-lg leading-8 text-gray-300">Recyclers, OEMs, and research partners across the battery value chain — reach out.</p>
+        <div class="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
+          <a href="mailto:hello@rosecityrobotics.com?subject=Partnership" class="btn btn-primary btn-lg">Partner with us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

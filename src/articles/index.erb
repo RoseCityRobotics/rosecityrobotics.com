@@ -1,11 +1,11 @@
 ---
 layout: default
-title: "Articles"
-description: "Research notes, deployment lessons, and what we're working on next at Rose City Robotics."
+title: "Research & News"
+description: "Research notes, disassembly experiments, and company news from the Rose City Robotics lab."
 permalink: /articles/
 ---
 
-<%= render SimpleLayout.new(eyebrow: "From the lab", title: "Articles", intro: "Research notes, deployment lessons, and what we're working on next.") do %>
+<%= render SimpleLayout.new(eyebrow: "From the lab", title: "Research & News", intro: "Research notes, disassembly experiments, and company news from the Rose City Robotics lab.") do %>
   <% articles = collections.articles.resources.reject { |a| a.data.unlisted } %>
   <% if articles.any? %>
     <div class="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-2">
