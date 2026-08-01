@@ -21,7 +21,9 @@ We have some big news to share: the U.S. Department of Energy's Office of Critic
 
 Launched in 2019, the Lithium-Ion Battery Recycling Prize was designed to increase the recovery rates of critical materials from lithium-based batteries in the United States, so those materials stay in the domestic supply chain instead of leaving it. The Breakthrough Contest challenged teams to accelerate the infrastructure needed to collect, sort, transport, and process spent lithium-ion batteries — with a target of pushing recovery rates above 90%.
 
-That target is the heart of the problem we work on. Today, recyclers face a bad tradeoff. Manual disassembly recovers the most value from an EV battery pack, but it puts skilled technicians next to thermal-runaway fires and lethal voltage, and reverse-engineering a single pack takes two experts about three hours. Whole-pack shredding scales — but it burns energy, consumes chemicals, and grinds reusable modules into lower-value feedstock. Neither path gets the industry to 90%.
+After reaching the finalist stage in late 2024, the Trump administration froze the U.S. Department of Energy including any progress on our the prize winner announcement. Unfortunately, we had to wait nearly two full years from our application due date to hear that we had won, a lot of valuable time and opportunity was lost for nothing. Not so made America.
+
+That being said, we are so proud and honored by the perseverance of the grant and prize administration team at Argonne National Labs and the U.S. Department of Energy. This capital is essential in enabling entrepreneurs and small businesses, the lifeblood of the American economy, to continue to develop innovation in the Lithium Ion battery recycling industry.
 
 ## Our application: robots that learn disassembly from experts
 
