@@ -7,7 +7,7 @@ tags:
 - robotics
 - company-news
 published_at: '2026-04-04T19:00:00Z'
-image: "/images/articles/what-we-learned-from-battlebots-about-production-ready-robots/battlebots-backstage.jpg"
+image: "/images/articles/what-we-learned-from-battlebots-about-production-ready-robots/cover.jpeg"
 meta_description: A backstage tour at BattleBots taught us the real meaning of production-ready robotics — every robot has a fully fired-up backup. What that means for humanoid demos and robotic battery disassembly.
 ---
 
@@ -25,7 +25,9 @@ So that was the frame of mind we brought to Vegas — a little bruised, watching
 
 **Then we got the backstage tour**
 
-After the show we got to walk the pits, and I snapped the photo at the top of this article. It's not a glamour shot of a spinner — it's a clipboard. The drivers' run sheet for show #642. Look closely at the columns.
+After the show we got to walk the pits, and I snapped the photo below. It's not a glamour shot of a spinner — it's a clipboard. The drivers' run sheet for show #642. Look closely at the columns.
+
+![The BattleBots Destruct-a-thon drivers' run sheet for show #642, with a Primary and Backup unit number listed for every robot](/images/articles/what-we-learned-from-battlebots-about-production-ready-robots/battlebots-backstage.jpg)
 
 For every robot in the show — Malice, Kraken, Nightmare, HyperShock — there are two columns: **Primary** and **Backup**. Each with a unit number. For every match, they have two of every robot — fully equipped, fired up, and ready to go. Not a shell in a crate. Not a parts bin. A second complete, running machine, staged and warm, every single night.
 

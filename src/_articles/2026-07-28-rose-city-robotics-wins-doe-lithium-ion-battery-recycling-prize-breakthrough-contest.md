@@ -9,7 +9,7 @@ tags:
 - robotics
 - imitation-learning
 published_at: '2026-07-28T16:00:00Z'
-image: "/images/glovebox_dissection.png"
+image: "/images/articles/rose-city-robotics-wins-doe-lithium-ion-battery-recycling-prize-breakthrough-contest/cover.png"
 meta_description: Rose City Robotics is one of eight winners of the DOE's Lithium-Ion Battery Recycling Prize Breakthrough Contest, earning $200,000 and advancing to Phase IV for our work on robotic EV battery disassembly.
 ---
 
