@@ -17,6 +17,10 @@ We have some big news to share: the U.S. Department of Energy's Office of Critic
 
 "This contest showcases the ingenuity required to maximize the value and useful life of critical materials," said Assistant Secretary of Energy Audrey Robertson in the DOE's announcement. We're honored to be part of that group, alongside teams like ReJoule, BinIt, NAECO, Glimpse Engineering, Li Industries, Renewance, and Smartville.
 
+<div class="aspect-[16/9] my-8 overflow-hidden rounded-2xl bg-gray-100">
+  <iframe class="w-full h-full" src="https://www.youtube.com/embed/9EJb1VoW-dY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+</div>
+
 ## Why this prize was delayed
 
 Launched in 2019, the Lithium-Ion Battery Recycling Prize was designed to increase the recovery rates of critical materials from lithium-based batteries in the United States, so those materials stay in the domestic supply chain instead of leaving it. The Breakthrough Contest challenged teams to accelerate the infrastructure needed to collect, sort, transport, and process spent lithium-ion batteries — with a target of pushing recovery rates above 90%.
@@ -42,3 +46,7 @@ In Phase IV, each advancing team receives $150,000 in noncash vouchers to suppor
 For us, that means scaling our prototype from e-bike battery packs to full EV packs, working with Oak Ridge National Laboratory to evaluate the system on a Nissan Leaf battery. There's a lot of engineering between here and there, and we can't wait to get started.
 
 If you work on battery end-of-life — as a recycler, an OEM, a researcher, or a policymaker — we'd love to talk. Reach us at [hello@rosecityrobotics.com](mailto:hello@rosecityrobotics.com).
+
+*This prize was developed by the U.S. Department of Energy's (DOE) Office of Critical Minerals and Energy Innovation (CMEI) and is administered by DOE's National Laboratory of the Rockies (NLR). The prize is part of DOE's [American-Made Challenges program](https://americanmadeprogram.org/challenges).*
+
+*The U.S. Department of Energy's (DOE's) American-Made Lithium-Ion Battery Recycling Prize is designed to incentivize American entrepreneurs to develop and demonstrate processes that, when scaled, have the potential to advance DOE's goals to support domestic critical mineral and material supply chains by building a recycling ecosystem and developing alternatives to reduce material reliance. The prize aims to help meet the growing demand for lithium-ion batteries in a variety of applications, including consumer electronics, stationary, and transportation. The Lithium-Ion Battery Recycling Prize was developed by the DOE's Office of Critical Minerals and Energy Innovation (CMEI) and is administered by DOE's National Laboratory of the Rockies as part of DOE's American-Made Challenges program. To learn more, visit: [batteryrecyclingprize.org](https://batteryrecyclingprize.org/).*
