@@ -39,7 +39,7 @@ We built this application with partners across the battery value chain: Oak Ridg
 
 ## What happens in Phase IV
 
-In Phase IV, each advancing team receives $150,000 in noncash vouchers to support validation, evaluation, and techno-economic and life cycle analysis of their proposals. The phase culminates in a $1 million grand prize for the overall winner, with up to $3 million distributed among up to four runner-up teams.
+In Phase IV, in addition to $200,000 cash, each advancing team receives $100,000 in noncash vouchers to support validation, evaluation, and techno-economic and life cycle analysis of their proposals. The phase culminates in a $1 million grand prize for the overall winner, with up to $3 million distributed among up to four runner-up teams.
 
 For us, that means scaling our prototype from e-bike battery packs to full EV packs, working with Oak Ridge National Laboratory to evaluate the system on a Nissan Leaf battery. There's a lot of engineering between here and there, and we can't wait to get started.
 
