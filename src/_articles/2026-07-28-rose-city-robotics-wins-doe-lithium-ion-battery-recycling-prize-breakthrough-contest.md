@@ -21,7 +21,7 @@ We have some big news to share: the U.S. Department of Energy's Office of Critic
   <iframe class="w-full h-full" src="https://www.youtube.com/embed/9EJb1VoW-dY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
 </div>
 
-## Why this prize was created
+## Why this prize exists
 
 Launched in 2019, the Lithium-Ion Battery Recycling Prize was designed to increase the recovery rates of critical materials from lithium-based batteries in the United States, so those materials stay in the domestic supply chain instead of leaving it. The Breakthrough Contest challenged teams to accelerate the infrastructure needed to collect, sort, transport, and process spent lithium-ion batteries — with a target of pushing recovery rates above 90%.
 
